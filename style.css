@@ -20,6 +20,30 @@ section {
 	height:800px; 
 	
 }
+section#submenu {
+	width:20%;
+	float:left;
+	background:#DDD;
+}
+
+section#formulario {
+	width:80%;
+	float:left;
+}
+
+form#cadastro {
+	top: 15px;
+	width:77.5%;
+	border-style: solid;
+    	border-width: 2px;
+	border-color: #0066a6;
+	position: relative;
+	margin: 0px auto;
+	border-radius: 15px;	
+	padding: 1%;
+
+}
+
 form#login {
 	top: 70px;
 	width: 250px;
@@ -33,13 +57,13 @@ form#login {
 	padding: 5px;
 }
 
-form#login input{
+form#login input, form#cadastro input{
 	margin: 4px;
 	color: #0066a6;
 }
 
 
-form#login label{
+form#login label, form#cadastro label{
 	margin: 4px;
 	color: #0066a6;
 }
