@@ -18,7 +18,13 @@ body{
 /* --- HTML 5 --- */
 header{
 	background-color: #0066a6;
-	background-image:
+	background-image: url('_imagens/Captura de tela - 16-06-2015 - 19:41:24.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	-moz-background-size:350px;
+	-o-background-size:350px;
+	-webkit-background-size:350px;
+	background-size: 350px;
 
 	padding: 5px 0px; 
 	height:130px;
