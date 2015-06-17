@@ -36,6 +36,7 @@ section {
 	background-color:#fff;
 
 	margin: 0px;
+	padding: 5px;
 	height:100%; 
 }
 footer {
@@ -176,3 +177,18 @@ a#destaque:hover{
 	text-decoration:underline;
 }
 /* ---------------------------------------------------------------------- */
+/* Página Principal */
+div.coluna {
+
+	background-color: yellow;
+	width: 49%;
+	margin: 4px;
+	float: right;
+
+	min-height: 400px;
+}
+@media (max-width: 908px){
+	div.coluna{
+		width: 98%;
+	}
+}
