@@ -193,3 +193,81 @@ div.coluna {
 		width: 98%;
 	}
 }
+div#main{
+	height: 900px;
+}
+
+section{
+	display: block;
+}
+
+footer{
+	clear: both;
+}
+div.coluna {
+	background-color: #fff;
+}
+div.bloco {
+	border: 1px solid #0055bb; 
+	border-radius: 5px;
+	width: 450px;
+	min-height: 200px;
+	box-shadow: 0px 1px 1px 1px #4c4c4c;
+	position: relative; 
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 25px;
+	left: auto;
+	right: auto;
+	margin: 10px;
+}
+@media (max-width: 908px){
+	div.coluna{
+		width: 98%;
+	}
+	div.bloco{
+		width: 92%;
+	}
+}
+@media (max-width: 360px){
+	div#main{
+		width: 100%;
+	}
+}
+div#coluna-esq .bloco {
+	margin-left: auto;
+}
+div#coluna-esq {
+	/*background-color: yellow;*/
+}
+div#coluna-dir {
+	/*background-color: green;*/
+}
+a {
+	text-decoration: none;
+	color: #4c4c4c;
+}
+ul {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 15px;
+	list-style-type: none;
+	width: auto;
+	font-size: 20px
+}
+ul li {
+	padding: 2px;
+}
+h3 {
+	text-indent: 10px;
+	font-size: 30px;
+	color: #0055bb;
+	font-family: "Arial";
+	margin-bottom: 0px;
+	width: auto;
+	padding-top: 0px;
+	margin-top: 6px;
+}
+a:hover {
+	text-decoration: underline;
+}
