@@ -6,7 +6,6 @@ Azul UEZO Claro: #5eabd9
 Cinza Claro: #999999
 Cinza Escuro: #4c4c4c
 
-
 */
 
 /* ------------------ CSS GERAL ------------------ */
@@ -27,18 +26,20 @@ header{
 	-webkit-background-size:400px;
 	background-size: 400px;
 
-	padding: 5px 0px; 
+	padding: 5px 0px;
 	height:130px;
 	width:100%;
 
 	border-bottom: 2px #014c88 solid;
 }
 section {
+	display: block;
+
 	background-color:#fff;
 
 	margin: 0px;
 	padding: 5px;
-	height:100%; 
+	height:100%;
 }
 footer {
 	color: #fff;
@@ -52,22 +53,39 @@ footer {
 
 	text-align: center;
 	font-size: 15px;
+
+	clear: both;
 }
 /* -------------- */
-/* Header */
+/* Responsividade */
 @media (max-width: 360px){
 	header img{
+		width: 100%;
+	}
+}
+@media (max-width: 908px){
+	div.coluna{
+		width: 98%;
+	}
+	div.bloco{
+		width: 92%;
+	}
+}
+@media (max-width: 360px){
+	div#main{
 		width: 100%;
 	}
 }
 /* -------------- */
 /* Estrutura Total */
 div#main {
+	height: 900px;
+
 	margin: 0px auto;
 	width: 90%;
 	box-shadow: 0px 4px 10px 3px #4c4c4c;
 	position: relative;
-	
+
 }
 /* -------------- */
 /* Caixa de Formulário */
@@ -84,7 +102,7 @@ form#login {
 	border-style: solid;
     	border-width: 3px;
 	border-color: #014c88;
-	border-radius: 3px;	
+	border-radius: 3px;
 }
 div#titlogin{
 	background-color: #014c88;
@@ -100,7 +118,6 @@ div#titlogin{
 	width: 250px;
 	height: 30px;
 }
-
 form#login input.campo{
 	color: #014c88;
 	border: solid 2px #ccc;
@@ -109,8 +126,6 @@ form#login input.campo{
 	float: right;
 	margin: 4px;
 }
-
-
 form#login label{
 	float: left;
 	margin: 4px;
@@ -144,7 +159,6 @@ form#login label{
 	-webkit-transition: background-image 10s;
     	transition: background-image 10s;
 }
-
 #btn_entrar:hover {
 	cursor: pointer;
 	background: #014c88;
@@ -170,7 +184,7 @@ a#destaque{
 
 	text-shadow: 5px;
 	color: #fff;
-	font-size: 10px; 
+	font-size: 10px;
 	text-decoration: none;
 }
 a#destaque:hover{
@@ -180,6 +194,7 @@ a#destaque:hover{
 /* ---------------------------------------------------------------------- */
 /* Página Principal */
 div.coluna {
+	background-color: #fff;
 
 	background-color: yellow;
 	width: 49%;
@@ -188,32 +203,13 @@ div.coluna {
 
 	min-height: 400px;
 }
-@media (max-width: 908px){
-	div.coluna{
-		width: 98%;
-	}
-}
-div#main{
-	height: 900px;
-}
-
-section{
-	display: block;
-}
-
-footer{
-	clear: both;
-}
-div.coluna {
-	background-color: #fff;
-}
 div.bloco {
-	border: 1px solid #0055bb; 
+	border: 1px solid #0055bb;
 	border-radius: 5px;
 	width: 450px;
 	min-height: 200px;
 	box-shadow: 0px 1px 1px 1px #4c4c4c;
-	position: relative; 
+	position: relative;
 	padding-top: 0px;
 	padding-left: 0px;
 	padding-right: 25px;
@@ -221,19 +217,7 @@ div.bloco {
 	right: auto;
 	margin: 10px;
 }
-@media (max-width: 908px){
-	div.coluna{
-		width: 98%;
-	}
-	div.bloco{
-		width: 92%;
-	}
-}
-@media (max-width: 360px){
-	div#main{
-		width: 100%;
-	}
-}
+
 div#coluna-esq .bloco {
 	margin-left: auto;
 }
@@ -243,6 +227,7 @@ div#coluna-esq {
 div#coluna-dir {
 	/*background-color: green;*/
 }
+/* Estilos Gerais - Modificação para o igor */
 a {
 	text-decoration: none;
 	color: #4c4c4c;
@@ -271,3 +256,4 @@ h3 {
 a:hover {
 	text-decoration: underline;
 }
+/* ---------------------------------------------------------------------- */
