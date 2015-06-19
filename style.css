@@ -177,9 +177,8 @@ a#destaque:hover{
 div.coluna {
 	background-color: #fff;
 
-	background-color: yellow;
 	width: 49%;
-	margin: 4px;
+	margin: 0px 4px;
 	float: left;
 
 	min-height: 400px;
@@ -187,29 +186,12 @@ div.coluna {
 div.bloco {
 	border: 1px solid #0055bb;
 	border-radius: 5px;
+
 	width: 90%;
 	min-height: 200px;
-	box-shadow: 0px 1px 1px 1px #4c4c4c;
-
 	margin: 10px;
 }
-/* Estilos Gerais - Modificação para o igor */
-a {
-	text-decoration: none;
-	color: #4c4c4c;
-}
-ul {
-	margin-top: 3px;
-	margin-left: 0px;
-	padding-left: 15px;
-	list-style-type: none;
-	width: auto;
-	font-size: 20px
-}
-ul li {
-	padding: 2px;
-}
-h3 {
+h3.menutitulo{
 	text-indent: 10px;
 	font-size: 30px;
 	color: #0055bb;
@@ -219,6 +201,22 @@ h3 {
 	padding-top: 0px;
 	margin-top: 6px;
 }
+a.menulink {
+	text-decoration: none;
+	color: #4c4c4c;
+}
+ul.menulist {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 15px;
+	list-style-type: none;
+	width: auto;
+	font-size: 20px
+}
+ul.menulist li {
+	padding: 2px;
+}
+
 a:hover {
 	text-decoration: underline;
 }
