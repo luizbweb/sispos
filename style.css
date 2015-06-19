@@ -267,6 +267,11 @@ form#cadastro label{
 	height:30px;
 	width:400px;
 }
+/* ---------------------------------------------------------------------- */
+/* Relatório de Consulta */
+#consulta {
+	line-height: 40px;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
