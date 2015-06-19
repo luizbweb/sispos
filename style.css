@@ -276,6 +276,32 @@ form#cadastro label{
 	margin: 0 auto;
 }
 
+/*-------------------------------------------------------------*/
+/* Consulta.html */
+
+div#div-consulta {
+	margin: 0 auto;
+ 	width: 50%;
+}
+
+div#div-consulta form#form-consulta{
+	margin: 0 auto;
+ 	width: 50%;
+ 		
+}
+
+div#div-form {
+ 	width: 500px;
+
+
+}
+
+div#div-consulta img {
+	width: 500px;
+
+}
+
+
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
 @media (max-width: 360px){
