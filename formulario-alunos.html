@@ -21,8 +21,8 @@
     <section style="">
 <div id="Menu-Cadastro">
 </div>
-<form name="Dados de Alunos">
-<fieldset id="field-principal" style="width:560px;height:850px">
+<form>
+<fieldset id="field-principal" style="width:340px;height:900px">
 <!--Dados Pessoais-->
 <fieldset id="dadospessoais" style="width:20px">
  <legend>Dados Pessoais</legend>
@@ -42,12 +42,14 @@
    <td align="left">
     <input type="text" name="nome2" size="15" maxlength="15">
    </td>
+   <tr>
    <td>
     <label id="numero">Sobrenome:</label>
    </td>
    <td align="left">
     <input type="text" name="sobrenome" size="15" maxlength="15">
    </td>
+  </tr>
   </tr>
    <td>
     <label>Nascimento: </label>
@@ -95,7 +97,7 @@
 
 <br />
 <!-- Endereço pessoal -->
-<fieldset style="width:20px">
+<fieldset style="width:52px">
  <legend>Dados de Endereço</legend>
  <table cellspacing="10">
 
@@ -104,14 +106,16 @@
     <label id="rua">Rua:</label>
    </td>
    <td align="left">
-    <input type="text" name="rua">
+    <input type="text" name="rua" size="33px" maxlength="60">
    </td>
+   <tr>
    <td>
     <label id="numero">N°:</label>
    </td>
    <td align="left">
-    <input type="text" name="numero" size="4">
+    <input type="text" name="numero" size="5px" maxlength="4">
    </td>
+   </tr>
   </tr>
   <tr>
    <td>
@@ -184,7 +188,7 @@
     <label id="inst">Instituição: </label>
    </td>
    <td align="left">
-    <input type="text" name="instituição" size="27" maxlength="27" >
+    <input type="text" name="instituição" size="29.5px" maxlength="27" >
    </td>
   </tr>
   <tr>
@@ -234,8 +238,10 @@
  </table>
 </fieldset>
 </br>
+
 <input type="submit" name="salvar" value="Salvar">
 <input type="button" name="sair" value="Sair">
+
 </fieldset>
 </form>
     </section>
