@@ -5,7 +5,6 @@ Azul UEZO Forte: #0055bb
 Azul UEZO Claro: #5eabd9
 Cinza Claro: #999999
 Cinza Escuro: #4c4c4c
-
 */
 
 /* ------------------ CSS GERAL ------------------ */
@@ -18,18 +17,28 @@ body{
 /* --- HTML 5 --- */
 header{
 	background-color: #0066a6;
+	background-image: url('_imagens/logomarcadagua.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	-moz-background-size:400px;
+	-o-background-size:400px;
+	-webkit-background-size:400px;
+	background-size: 400px;
 
-	padding: 5px 0px; 
+	padding: 5px 0px;
 	height:130px;
 	width:100%;
 
 	border-bottom: 2px #014c88 solid;
 }
 section {
+	display: block;
+
 	background-color:#fff;
 
 	margin: 0px;
-	height:100%; 
+	padding: 5px;
+	height:100%;
 }
 footer {
 	color: #fff;
@@ -43,22 +52,20 @@ footer {
 
 	text-align: center;
 	font-size: 15px;
-}
-/* -------------- */
-/* Header */
-@media (max-width: 360px){
-	header img{
-		width: 100%;
-	}
+
+	clear: both;
 }
 /* -------------- */
 /* Estrutura Total */
 div#main {
+	background-color: #fff;
+    box-shadow: 0px 4px 10px 3px #4c4c4c;
+
 	margin: 0px auto;
 	width: 90%;
-	box-shadow: 0px 4px 10px 3px #4c4c4c;
+	min-height: 1000px;
 	position: relative;
-	
+
 }
 /* -------------- */
 /* Caixa de Formulário */
@@ -73,9 +80,9 @@ form#login {
 	padding: 0px;
 
 	border-style: solid;
-    	border-width: 3px;
+    border-width: 3px;
 	border-color: #014c88;
-	border-radius: 3px;	
+	border-radius: 3px;
 }
 div#titlogin{
 	background-color: #014c88;
@@ -91,8 +98,7 @@ div#titlogin{
 	width: 250px;
 	height: 30px;
 }
-
-form#login input.campo {
+form#login input.campo{
 	color: #014c88;
 	border: solid 2px #ccc;
 	border-left: solid 5px #ccc;
@@ -100,34 +106,14 @@ form#login input.campo {
 	float: right;
 	margin: 4px;
 }
-
-form#login label {
+form#login label{
 	float: left;
 	margin: 4px;
-	color: #22A;
-}
-/*Formulário geral*/
-form#cadastro {
-    width:350px;
-}
-
-form#cadastro input.campo{
-	color: #014c88;
-	border: solid 2px #ccc;
-	border-left: solid 5px #ccc;
-
-	float: right;
-	margin: 4px;
-}
-
-form#cadastro label{
-	float: left;
-	margin: 4px;
-	color: #22A;
+	color: #fff;
 }
 /* -------------- */
 /* Botão */
-#btn_entrar, #btn_cadastrar {
+#btn_entrar {
 	background: #f5f5f5;
 	color: #0066a6;
 
@@ -153,8 +139,7 @@ form#cadastro label{
 	-webkit-transition: background-image 10s;
     	transition: background-image 10s;
 }
-
-#btn_entrar:hover, #btn_cadastrar:hover {
+#btn_entrar:hover {
 	cursor: pointer;
 	background: #014c88;
 	color: #f5f5f5;
@@ -179,23 +164,126 @@ a#destaque{
 
 	text-shadow: 5px;
 	color: #fff;
-	font-size: 10px; 
+	font-size: 10px;
 	text-decoration: none;
 }
 a#destaque:hover{
 	color: #fff;
 	text-decoration:underline;
 }
+/* ---------------------------------------------------------------------- */
+/* Página Principal */
+div.coluna {
+	background-color: #fff;
 
+	width: 49%;
+	margin: 0px 4px;
+	float: left;
+
+	min-height: 400px;
+}
+div.bloco {
+	border: 1px solid #014c88;
+	border-radius: 3px;
+
+	width: 90%;
+	min-height: 200px;
+	margin: 10px;
+}
+h3.menutitulo{
+    background-color: #014c88;
+    border-radius: 2px;
+
+    text-align:center;
+	text-indent: 10px;
+	font-size: 25px;
+	color: #fff;
+	font-family: "Arial";
+
+	margin-bottom: 0px;
+	width: auto;
+
+	padding-top: 0px;
+	margin-top: 0px;
+}
+a.menulink {
+	text-decoration: none;
+	color: #4c4c4c;
+
+    transition: color 0.5s;
+}
+a:hover {
+    color: #aaa;
+}
+ul.menulist {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 15px;
+	list-style-type: none;
+	width: auto;
+	font-size: 20px
+}
+ul.menulist li {
+	padding: 2px;
+}
 /* -------------- */
 /*Espaçamento de DIVs para páginas com formulário*/
 #submenu {
     width:20%;
     float:left;
     background: #DDD;
+    min-height: 1000px;
 }
 
 #formulario {
-    width:80%;
+    width:78.2%;
     float:left;
+    min-height: 1000px;
+}
+
+/*-----------------------------------------------*/
+/*Formulário geral*/
+form#cadastro {
+    width:400px;
+}
+
+form#cadastro input.campo, form#cadastro select.campo{
+	color: #02F;
+	border: solid 2px #9CF;
+	border-left: solid 5px #6FC2F4;
+
+	float: right;
+	margin: 4px;
+}
+
+form#cadastro label{
+	float: left;
+	margin: 4px;
+	color: #22A;
+}
+
+.cadastro_coluna {
+	margin: 0 auto;
+	height:30px;
+	width:400px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Responsividade Geral*/
+@media (max-width: 360px){
+	header img{
+		width: 100%;
+	}
+	div#main{
+		margin: 0px 0px;
+		width: 100%;
+	}
+}
+@media (max-width: 908px){
+	div.coluna{
+		width: 98%;
+	}
+	div.bloco{
+		width: 94%;
+	}
 }
