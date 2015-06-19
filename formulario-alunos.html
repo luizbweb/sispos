@@ -19,9 +19,10 @@
     </header>
 	
     <section style="">
-
+<div id="Menu-Cadastro">
+</div>
 <form>
-
+<fieldset id="field-principal" style="width:560px;height:850px">
 <!--Dados Pessoais-->
 <fieldset id="dadospessoais" style="width:20px">
  <legend>Dados Pessoais</legend>
@@ -88,32 +89,15 @@
    <td align="left">
     <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
    </td>
-   <tr>
-   <td>
-   <legend>Dados de Endereço</legend>
-   <tr>
-   <td>
-    <label id="rua">Rua:</label>
-   </td>
-   <td align="left">
-    <input type="text" name="rua">
-   </td>
-   <td>
-    <label id="numero">Numero:</label>
-   </td>
-    <td align="left">
-    <input type="text" name="numero" size="8">
-   </td>
-   </td>
   </tr>
  </table>
 </fieldset>
 
 <br />
 <!-- Endereço pessoal -->
-<fieldset style="width:20px; float:left">
+<fieldset style="width:20px">
  <legend>Dados de Endereço</legend>
- <table cellspacing="10" align="right">
+ <table cellspacing="10">
 
   <tr>
    <td>
@@ -123,7 +107,7 @@
     <input type="text" name="rua">
    </td>
    <td>
-    <label id="numero">Numero:</label>
+    <label id="numero">N°:</label>
    </td>
    <td align="left">
     <input type="text" name="numero" size="4">
@@ -248,6 +232,10 @@
    </td>
   </tr>
  </table>
+</fieldset>
+</br>
+<input type="submit" name="salvar" value="Salvar">
+<input type="button" name="sair" value="Sair">
 </fieldset>
 </form>
     </section>
