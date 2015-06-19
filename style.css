@@ -63,7 +63,7 @@ div#main {
 
 	margin: 0px auto;
 	width: 90%;
-	min-height: 500px;
+	min-height: 1000px;
 	position: relative;
 
 }
@@ -232,16 +232,41 @@ ul.menulist li {
     width:20%;
     float:left;
     background: #DDD;
+    min-height: 1000px;
 }
 
 #formulario {
     width:78.2%;
     float:left;
+    min-height: 1000px;
 }
 
-/*-----------------------------------------------------*/
-/*Formulário de Professores*/
+/*-----------------------------------------------*/
+/*Formulário geral*/
+form#cadastro {
+    width:400px;
+}
 
+form#cadastro input.campo, form#cadastro select.campo{
+	color: #02F;
+	border: solid 2px #9CF;
+	border-left: solid 5px #6FC2F4;
+
+	float: right;
+	margin: 4px;
+}
+
+form#cadastro label{
+	float: left;
+	margin: 4px;
+	color: #22A;
+}
+
+.cadastro_coluna {
+	margin: 0 auto;
+	height:30px;
+	width:400px;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
