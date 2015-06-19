@@ -81,7 +81,7 @@ form#login {
 	padding: 0px;
 
 	border-style: solid;
-    	border-width: 3px;
+    border-width: 3px;
 	border-color: #014c88;
 	border-radius: 3px;
 }
@@ -184,26 +184,37 @@ div.coluna {
 	min-height: 400px;
 }
 div.bloco {
-	border: 1px solid #0055bb;
-	border-radius: 5px;
+	border: 1px solid #014c88;
+	border-radius: 3px;
 
 	width: 90%;
 	min-height: 200px;
 	margin: 10px;
 }
 h3.menutitulo{
+    background-color: #014c88;
+    border-radius: 2px;
+
+    text-align:center;
 	text-indent: 10px;
-	font-size: 30px;
-	color: #0055bb;
+	font-size: 25px;
+	color: #fff;
 	font-family: "Arial";
+
 	margin-bottom: 0px;
 	width: auto;
+
 	padding-top: 0px;
-	margin-top: 6px;
+	margin-top: 0px;
 }
 a.menulink {
 	text-decoration: none;
 	color: #4c4c4c;
+
+    transition: color 0.5s;
+}
+a:hover {
+    color: #aaa;
 }
 ul.menulist {
 	margin-top: 3px;
@@ -217,11 +228,8 @@ ul.menulist li {
 	padding: 2px;
 }
 
-a:hover {
-	text-decoration: underline;
-}
 /* ---------------------------------------------------------------------- */
-/* Responsividade */
+/* Responsividade Geral*/
 @media (max-width: 360px){
 	header img{
 		width: 100%;
