@@ -5,8 +5,6 @@ Azul UEZO Forte: #0055bb
 Azul UEZO Claro: #5eabd9
 Cinza Claro: #999999
 Cinza Escuro: #4c4c4c
-hahaha teste
-
 */
 
 /* ------------------ CSS GERAL ------------------ */
@@ -27,18 +25,20 @@ header{
 	-webkit-background-size:400px;
 	background-size: 400px;
 
-	padding: 5px 0px; 
+	padding: 5px 0px;
 	height:130px;
 	width:100%;
 
 	border-bottom: 2px #014c88 solid;
 }
 section {
+	display: block;
+
 	background-color:#fff;
 
 	margin: 0px;
 	padding: 5px;
-	height:100%; 
+	height: 100%;
 }
 footer {
 	color: #fff;
@@ -52,22 +52,20 @@ footer {
 
 	text-align: center;
 	font-size: 15px;
-}
-/* -------------- */
-/* Header */
-@media (max-width: 360px){
-	header img{
-		width: 100%;
-	}
+
+	clear: both;
 }
 /* -------------- */
 /* Estrutura Total */
 div#main {
+	background-color: #fff;
+    box-shadow: 0px 4px 10px 3px #4c4c4c;
+
 	margin: 0px auto;
 	width: 90%;
-	box-shadow: 0px 4px 10px 3px #4c4c4c;
+	min-height: 500px;
 	position: relative;
-	
+
 }
 /* -------------- */
 /* Caixa de Formulário */
@@ -82,9 +80,9 @@ form#login {
 	padding: 0px;
 
 	border-style: solid;
-    	border-width: 3px;
+    border-width: 3px;
 	border-color: #014c88;
-	border-radius: 3px;	
+	border-radius: 3px;
 }
 div#titlogin{
 	background-color: #014c88;
@@ -100,7 +98,6 @@ div#titlogin{
 	width: 250px;
 	height: 30px;
 }
-
 form#login input.campo{
 	color: #014c88;
 	border: solid 2px #ccc;
@@ -109,8 +106,6 @@ form#login input.campo{
 	float: right;
 	margin: 4px;
 }
-
-
 form#login label{
 	float: left;
 	margin: 4px;
@@ -144,7 +139,6 @@ form#login label{
 	-webkit-transition: background-image 10s;
     	transition: background-image 10s;
 }
-
 #btn_entrar:hover {
 	cursor: pointer;
 	background: #014c88;
@@ -170,7 +164,7 @@ a#destaque{
 
 	text-shadow: 5px;
 	color: #fff;
-	font-size: 10px; 
+	font-size: 10px;
 	text-decoration: none;
 }
 a#destaque:hover{
@@ -180,110 +174,75 @@ a#destaque:hover{
 /* ---------------------------------------------------------------------- */
 /* Página Principal */
 div.coluna {
+	background-color: #fff;
 
-	background-color: yellow;
 	width: 49%;
-	margin: 4px;
-	float: right;
+	margin: 0px 4px;
+	float: left;
 
 	min-height: 400px;
+}
+div.bloco {
+	border: 1px solid #014c88;
+	border-radius: 3px;
+
+	width: 90%;
+	min-height: 200px;
+	margin: 10px;
+}
+h3.menutitulo{
+    background-color: #014c88;
+    border-radius: 2px;
+
+    text-align:center;
+	text-indent: 10px;
+	font-size: 25px;
+	color: #fff;
+	font-family: "Arial";
+
+	margin-bottom: 0px;
+	width: auto;
+
+	padding-top: 0px;
+	margin-top: 0px;
+}
+a.menulink {
+	text-decoration: none;
+	color: #4c4c4c;
+
+    transition: color 0.5s;
+}
+a:hover {
+    color: #aaa;
+}
+ul.menulist {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 15px;
+	list-style-type: none;
+	width: auto;
+	font-size: 20px
+}
+ul.menulist li {
+	padding: 2px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Responsividade Geral*/
+@media (max-width: 360px){
+	header img{
+		width: 100%;
+	}
+	div#main{
+		margin: 0px 0px;
+		width: 100%;
+	}
 }
 @media (max-width: 908px){
 	div.coluna{
 		width: 98%;
 	}
-}
-
-div.imagem img{
-
-	position: relative;
-    right:0px;
-	left:310px;
-	top:150px;
-	width:500px;
-	height:180px;
-}
-@media (max-width: 908px){
-	div.imagem{
+	div.bloco{
+		width: 94%;
 	}
-}
-
-div.camptext{
-	position: relative;
-	right:0px;
-	left:290px;
-	top:150px;
-}
-
-div.botao button {
-    overflow: visible;
-    position: relative;
-    float: right;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-	margin-top:13%;
-	margin-right:23.8%;
-    height: 33px;
-    width: 110px;
-    font: bold 15px/4px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    color: #fff;
-    text-transform: uppercase;
-    background: #01518E;
-    border-radius: 0 3px 3px 0;      
-    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
-} 
-
-div.botao input{
-	background:transparent ;
-	border: nome;
-	bottom:0;
-	box-sizing: border-box;
-	left:0;
-	margin-top:13%;
-	margin-left:22%;
-	outline:none;
-	top:0;
-	width:45%;
-	height:5%;
-	color: #000;
-	text-align: initial;
-	font-size: 16px;
-	overflow:hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap ;
-}
-
-div.botao button:hover{     
-    background: #e54040;
-}   
-   
-div.botao button:active,
-div.botao button:focus{   
-    background:  #00CCFF;
-    outline: 0;   
-}
- 
-div.botao button:before { /* left arrow */
-    content: '';
-    position: absolute;
-    border-width: 0px 0px 0px 0;
-    border-style: solid solid solid none;
-    border-color: transparent  #00CCFF transparent;
-    top: 12px;
-    left: -6px;
-}
- 
-div.botao button:hover:before{
-    border-right-color: #00CCFF;
-}
- 
-div.botao button:focus:before,
-div.botao button:active:before{
-        border-right-color: #00CCFF;
-}      
- 
-div.botao button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
-    border: 0;
-    padding: 0;
 }
