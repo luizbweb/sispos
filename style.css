@@ -38,7 +38,7 @@ section {
 
 	margin: 0px;
 	padding: 5px;
-	height: 100%;
+	height:100%;
 }
 footer {
 	color: #fff;
@@ -226,6 +226,22 @@ ul.menulist {
 ul.menulist li {
 	padding: 2px;
 }
+/* -------------- */
+/*Espaçamento de DIVs para páginas com formulário*/
+#submenu {
+    width:20%;
+    float:left;
+    background: #DDD;
+}
+
+#formulario {
+    width:78.2%;
+    float:left;
+}
+
+/*-----------------------------------------------------*/
+/*Formulário de Professores*/
+
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
