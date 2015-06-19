@@ -5,7 +5,7 @@ Azul UEZO Forte: #0055bb
 Azul UEZO Claro: #5eabd9
 Cinza Claro: #999999
 Cinza Escuro: #4c4c4c
-
+hahaha teste
 
 */
 
@@ -192,4 +192,98 @@ div.coluna {
 	div.coluna{
 		width: 98%;
 	}
+}
+
+div.imagem img{
+
+	position: relative;
+    right:0px;
+	left:310px;
+	top:150px;
+	width:500px;
+	height:180px;
+}
+@media (max-width: 908px){
+	div.imagem{
+	}
+}
+
+div.camptext{
+	position: relative;
+	right:0px;
+	left:290px;
+	top:150px;
+}
+
+div.botao button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+	margin-top:13%;
+	margin-right:23.8%;
+    height: 33px;
+    width: 110px;
+    font: bold 15px/4px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #01518E;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+} 
+
+div.botao input{
+	background:transparent ;
+	border: nome;
+	bottom:0;
+	box-sizing: border-box;
+	left:0;
+	margin-top:13%;
+	margin-left:22%;
+	outline:none;
+	top:0;
+	width:45%;
+	height:5%;
+	color: #000;
+	text-align: initial;
+	font-size: 16px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap ;
+}
+
+div.botao button:hover{     
+    background: #e54040;
+}   
+   
+div.botao button:active,
+div.botao button:focus{   
+    background:  #00CCFF;
+    outline: 0;   
+}
+ 
+div.botao button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 0px 0px 0px 0;
+    border-style: solid solid solid none;
+    border-color: transparent  #00CCFF transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+div.botao button:hover:before{
+    border-right-color: #00CCFF;
+}
+ 
+div.botao button:focus:before,
+div.botao button:active:before{
+        border-right-color: #00CCFF;
+}      
+ 
+div.botao button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
 }
