@@ -61,11 +61,9 @@ div#main {
 	background-color: #fff;
     	box-shadow: 0px 4px 10px 3px #4c4c4c;
 
-/* teste */
-
 	margin: 0px auto;
 	width: 90%;
-	min-height: 1000px;
+	min-height: 400px;
 	position: relative;
 
 }
