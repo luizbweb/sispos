@@ -10,17 +10,20 @@
 /*----------------*/
 /*Cadastro Curso*/
 
-.Cad-Curso{
-margin:10% 15%;
-width:600px;height:350px;
-color:#ccc;
+section#main div.Cad-Curso{
+	margin:10px 10px;
+	width:600px;height:350px;
+	color:#ccc;
+	position: relative;	
 }
 
-.borda{
-	left:800px;
-	padding:0px;
+fieldset#borda{
+	padding: 0px;
 	border-color:#0066a6;
 	box-shadow:15px 15px 9px 0px rgba(0,0,0,0.49);
+	width:560px;
+	height:300px;
+	margin:10px 20px;
 }
 
 .subtitulo{
@@ -39,52 +42,83 @@ color:#ccc;
 .campo{
 width:250px
 }
+ul#lista-cadastro {
+	list-style-type: none;
+}
+
+ul#lista-cadastro li {
+	margin: 4px 0px;
+}
+
+
 </style>
 <body>
 
 
   <div id="main">
     <header id="menu">
-	
-	<div id="logo">
-		<img src="_imagens/logo_uezo_1.jpg">
-	</div>
-    </header>
-    <section id="submenu">
-		<!--Lista Referente ao Submenu-->
-	</section>
-	<section id="formulario">
-		<div id="Cad-Curso">
-		<form >
-		
-		<fieldset id="borda" style="width:560px;height:300px" >
-		<div id="subtitulo">Cadastro de Curso</div>
-			<div align="right" style="margin-right:30%"><div class="itens_cadastro"><label value="Nome" >Nome:</label>
-			<input class="campo" type="text"> <br></div>
-			<div class="itens_cadastro"><label value="Coordenação">Coordenação:</label>
-			<input class="campo" type="text"><br></div>
-			<div class="itens_cadastro"><label value="identificação">ID:</label>
-			<input class="campo" type="text"> <br></div>
-			<div class="itens_cadastro"><label value="Duração">Duração:</label>
-			<input class="campo" type="text"> <br></div>
-			<div class="itens_cadastro"><label value="Tipo">Tipo:</label>
-			<select name="área do conhecimento">
-			<option  >Escolha Área do Conhecimento</option>
-			<option value="Exatas">Ciências Exatas</option>
-			<option value="Biologicas">Ciências Biologicas</option>
-			<option value="Saúde">Ciências Saúde</option>
-			<option value="Agrárias">Ciências Agrárias</option>
-			<option value="Sociais Aplicadas">Ciências Sociais Aplicadas</option>
-			<option value="Humanas">Ciências Humanas</option>
-			<option value="Engenharias">Engenharias</option>
-			<option value="Linguísticas/Letras e Artes">Linguísticas, Letras e Artes</option>
-			<option value="outros">Outros</option>
-			<label value="Área do Conhecimento">Área do Conhecimento:</label>			
-			<div ><input id="btn_cadastrar" type="button" value="Cadastrar" <!--style="padding:0px"--></div></div></div>
-			</fieldset>
-		</form>
+		<div id="logo">
+			<img src="_imagens/logo_uezo_1.jpg">
 		</div>
-    </section>
+    </header>
+    <aside id="submenu">
+		<!--Lista Referente ao Submenu-->
+
+		
+	</aside>
+	<section id="main">
+		<div id="Cad-Curso">
+			<form id = "form-cadastro">
+		
+				<fieldset id="borda" >
+				<ul id="lista-cadastro">
+					<li>
+						<h3 class="menutitulo">Cadastro de Curso</h3>
+					</li>
+					<li>
+						<label value="Nome" >Nome:</label>
+						<input class="campo" type="text"> 
+					</li>
+					<li>
+						<label value="Coordenação">Coordenação:</label>
+						<input class="campo" type="text">
+					</li>
+					<li>
+						<label value="identificação">ID:</label>
+						<input class="campo" type="text"> 
+					</li>
+					<li>
+						<label value="Duração">Duração:</label>
+						<input class="campo" type="text">
+					</li>
+					<li>
+						<label value="Tipo">Tipo:</label>
+						<select name="área do conhecimento">
+							<option  >Escolha Área do Conhecimento</option>
+							<option value="Exatas">Ciências Exatas</option>
+							<option value="Biologicas">Ciências Biologicas</option>
+							<option value="Saúde">Ciências Saúde</option>
+							<option value="Agrárias">Ciências Agrárias</option>
+							<option value="Sociais Aplicadas">Ciências Sociais Aplicadas</option>
+							<option value="Humanas">Ciências Humanas</option>
+							<option value="Engenharias">Engenharias</option>
+							<option value="Linguísticas/Letras e Artes">Linguísticas, Letras e Artes</option>
+							<option value="outros">Outros</option>
+						</select>
+					</li>
+					<li>
+						<label value="Área do Conhecimento">Área do Conhecimento:</label>			
+						<input type="text">
+					</li>
+					<li>
+						<input id="btn_cadastrar" type="button" value="Cadastrar">
+						<input id="btn_limpar" type="reset" value="Limpar">
+					</li>
+				</ul>
+				</fieldset>		
+			</form>
+		</div>
+	</section>
   </div>
   
 
