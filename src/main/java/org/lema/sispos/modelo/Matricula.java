@@ -4,6 +4,8 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Calendar;
 
+import org.lema.sispos.exception.DomainException;
+
 public class Matricula {
 	private int ano; 
 	private int semestre;
@@ -36,14 +38,17 @@ public class Matricula {
 		this.mesAtual = getMesAtual();
 		this.semestreAtual = getSemestreAtual(mesAtual);
 		
-		if(ano > anoAtual || semestre > semestreAtual) { 
-			throw new IllegalArgumentException("Matricula Inválida");
-		}
-		
 		this.ano = ano;
 		this.semestre = semestre;
 		this.classificacao = classificacao;
 		this.curso = curso;
+		
+		if(semestre > 2 || semestre < 1)
+			throw new DomainException("Matricula Inválida");
+		
+		if(ano > anoAtual || (this.ano == anoAtual && semestre > semestreAtual)) {
+			throw new DomainException("Matricula Inválida");
+		}
 		
 	}
 
