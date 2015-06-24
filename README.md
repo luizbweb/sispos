@@ -11,3 +11,5 @@ Com o Eclipse aberto:
 Em Project Explorer: Botão direito > Import > Existing Projects into Workspace
 
 Selecione o projeto, clique em Finish
+
+Vídeo: https://youtu.be/5zd1jj-dokY
