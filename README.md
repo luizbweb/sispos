@@ -29,6 +29,6 @@ http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr
 
 # Metas para 01/07
 
-- Iniciar domínio (Lucas Sant'ana e Igor)
+- Iniciar modelagem do domínio (Lucas Sant'ana e Igor)
 - Classe Matrícula (Vitor Gabriel)
 - Enum AreaDoConhecimento (Carlos Alberto)
