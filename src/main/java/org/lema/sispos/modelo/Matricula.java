@@ -1,5 +1,7 @@
 package org.lema.sispos.modelo;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Calendar;
 
 public class Matricula {
@@ -29,7 +31,7 @@ public class Matricula {
 		return curso;
 	}
 
-	public Matricula(int ano, int semestre, int classificacao, String curso) {
+	public Matricula(String curso, int ano, int semestre, int classificacao) {
 		this.anoAtual = getAnoAtual();
 		this.mesAtual = getMesAtual();
 		this.semestreAtual = getSemestreAtual(mesAtual);
@@ -78,4 +80,13 @@ public class Matricula {
 	private boolean isPrimeiroPeriodo(int mesAtual) {
 		return mesAtual < 8;
 	}
+
+	@Override
+	public String toString() {
+		NumberFormat nf = new DecimalFormat("000");
+		String classificacao = nf.format(this.classificacao);
+		
+		return curso + ano + semestre + classificacao;
+	}
+	
 }
