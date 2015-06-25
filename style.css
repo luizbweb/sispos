@@ -237,7 +237,7 @@ ul.menulist li {
 
 #formulario {
     width:78.2%;
-    float:left;
+
     min-height: 1000px;
 }
 
@@ -251,8 +251,6 @@ form#cadastro input.campo, form#cadastro select.campo{
 	color: #02F;
 	border: solid 2px #9CF;
 	border-left: solid 5px #6FC2F4;
-
-	float: right;
 	margin: 4px;
 }
 
@@ -274,6 +272,11 @@ form#cadastro label{
 	width:400px;
 	line-height: 40px;
 	margin: 0 auto;
+}
+
+form#cadastro ul {
+	list-style-type: none;
+	margin: 2px;
 }
 
 /*-------------------------------------------------------------*/
