@@ -237,7 +237,7 @@ ul.menulist li {
 
 #formulario {
     width:78.2%;
-
+    float: left;
     min-height: 1000px;
 }
 
