@@ -44,6 +44,7 @@ width:250px
 }
 ul#lista-cadastro {
 	list-style-type: none;
+	padding:0px
 }
 
 ul#lista-cadastro li {
@@ -53,7 +54,6 @@ ul#lista-cadastro li {
 
 </style>
 <body>
-
 
   <div id="main">
     <header id="menu">
@@ -66,7 +66,7 @@ ul#lista-cadastro li {
 
 		
 	</aside>
-	<section id="main">
+	<div id="formulario">
 		<div id="Cad-Curso">
 			<form id = "form-cadastro">
 		
@@ -92,7 +92,7 @@ ul#lista-cadastro li {
 						<input class="campo" type="text">
 					</li>
 					<li>
-						<label value="Tipo">Tipo:</label>
+						<label value="Área do Conhecimento">Área do Conhecimento:</label>			
 						<select name="área do conhecimento">
 							<option  >Escolha Área do Conhecimento</option>
 							<option value="Exatas">Ciências Exatas</option>
@@ -107,9 +107,14 @@ ul#lista-cadastro li {
 						</select>
 					</li>
 					<li>
-						<label value="Área do Conhecimento">Área do Conhecimento:</label>			
-						<input type="text">
+						<label value="Tipo">Tipo:</label>
+						<select name="área do conhecimento">
+						<option> </option>
+							<option value="Profissional">Profissional</option>
+							<option value="Academico">Academico</option>
+						</select>
 					</li>
+				
 					<li>
 						<input id="btn_cadastrar" type="button" value="Cadastrar">
 						<input id="btn_limpar" type="reset" value="Limpar">
@@ -118,7 +123,7 @@ ul#lista-cadastro li {
 				</fieldset>		
 			</form>
 		</div>
-	</section>
+	</div>
   </div>
   
 
