@@ -1,0 +1,13 @@
+[gui]
+	recentrepo = C:/xampp/htdocs/foco/wp-content
+[user]
+	name = heniqueespindola
+	email = heniqueespindola@gmail.com
+[remote "origin"]
+	url = https://github.com/luizbweb/sispos.git
+[http]
+[http]
+	proxy = 172.16.0.2:3128
+	sslverify = false
+[push]
+	default = simple
