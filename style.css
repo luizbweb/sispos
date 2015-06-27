@@ -307,14 +307,16 @@ div#div-consulta img {
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
-@media (max-width: 360px){
+
+/* Rever essa aplicação, esta conflitando com outra class main*/
+/*@media (max-width: 360px){
 	header img{
 		width: 100%;
 	}
 	div#main{
 		margin: 0px 0px;
 		width: 100%;
-	}
+	}*/
 }
 @media (max-width: 908px){
 	div.coluna{
