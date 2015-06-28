@@ -10,7 +10,6 @@ public class Matricula {
 	private int ano; 
 	private int semestre;
 	private int classificacao;
-	
 	private int anoAtual;
 	private int mesAtual;
 	private int semestreAtual;
