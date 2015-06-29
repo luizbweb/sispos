@@ -9,9 +9,5 @@
 <body>
 Olá mundo
 
-<form action="curso">
-	<input type="text" name="nome">
-	<input type="submit" value="Cadastrar">
-</form>
 </body>
 </html>

@@ -12,10 +12,4 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/curso")
-	public String index(Curso curso) {
-		System.out.println("Curso: " + curso.getNome());
-		return "index";
-	}
-	
 }

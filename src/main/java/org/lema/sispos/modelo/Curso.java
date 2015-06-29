@@ -1,10 +1,23 @@
 package org.lema.sispos.modelo;
 
-public class Curso {
+public final class Curso {
 	private String nome;
 	private String identificacao;
 	private int duracao;
 	private AreaDoConhecimento area;
+	
+	private Curso() { 
+		
+	}
+
+	private Curso(String nome, String identificacao, int duracao,
+				  AreaDoConhecimento area) {
+
+		this.nome = nome;
+		this.identificacao = identificacao;
+		this.duracao = duracao;
+		this.area = area;
+	}
 	
 	public static class Builder {
 		public Curso curso = new Curso();
@@ -30,25 +43,14 @@ public class Curso {
 		}
 		
 		public Curso build() {
-			return new Curso(curso.nome, curso.identificacao,
-					curso.duracao, curso.area);
+			return new Curso(curso.getNome(), 
+							 curso.getIdentificacao(),
+							 curso.getDuracao(), 
+							 curso.getArea());
 		}
 		
 	}
 	
-	private Curso() { 
-		
-	}
-
-	private Curso(String nome, String identificacao, int duracao,
-			AreaDoConhecimento area) {
-		super();
-		this.nome = nome;
-		this.identificacao = identificacao;
-		this.duracao = duracao;
-		this.area = area;
-	}
-
 	public String getNome() {
 		return nome;
 	}
