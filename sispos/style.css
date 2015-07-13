@@ -307,8 +307,6 @@ div#div-consulta img {
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
-
-/* Rever essa aplicação, estava conflitando com outra class main*/
 @media (max-width: 360px){
 	header img{
 		width: 100%;
