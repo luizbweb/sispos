@@ -8,32 +8,44 @@
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
     <style>
-	div#cad_form {
-	margin-top:5%;
-	margin-left:25%;
-	margin-right:10%;
-	}
-	
-	fieldset#borda{
-	padding-top:0px;
-	padding-left:0px;
-	padding-right:0px;
-	border-color:#0066a6;
-	box-shadow:15px 15px 9px 0px rgba(0,0,0,0.49);
-	width:500px;
-	height:300px;
-	margin:10px 20px;
-	border: 3px solid #014c88;
-    }
+    div#cad_form {
+        margin-top:5%;
+        margin-left:25%;
+        margin-right:10%;
+        }
+
+    fieldset#borda{
+        padding-top:0px;
+        padding-left:0px;
+        padding-right:0px;
+        border-color:#0066a6;
+        box-shadow:8px 8px 9px 0px rgba(0,0,0,0.30);
+        width:500px;
+        height:700px;
+        margin:10px 20px;
+        border: 3px solid #014c88;
+        }
 
     .itens_cadastro{
-	height: 30px;
-	margin-top: 20px 
-	margin-left: 20px;
-	}
-	
+        height: 30px;
+        margin-top: 20px 
+        margin-left: 20px;
+        }
+    
     .menulist{
-    padding-top:5px;
+        padding-top:5px;
+        }
+    h3.formtitulo{
+        background-color: #014c88;
+        text-align:center;
+        text-indent: 10px;
+        font-size: 25px;
+        color: #fff;
+        font-family: "Arial";
+        margin-bottom: 0px;
+        width: auto;
+        padding-top: 0px;
+        margin-top: 0px;
     }
 	</style>
   <body>
@@ -50,8 +62,8 @@
         <form>
             <div id="cad_form">
                 <!--Dados Pessoais-->
-                <fieldset id="borda" style="width:20px; height:200px;">
-                    <legend>Dados Pessoais</legend>
+                <fieldset id="borda">
+                    <h3 class="formtitulo">Aluno</h3>
                         <div class="cadastro_coluna">
                             <label id="sobrenome">Matrícula: </label>
                             <input type="text" name="matricula" size="27" maxlength="27">
@@ -59,6 +71,9 @@
                         <div class="cadastro_coluna">
                             <label id="rua">Nome:</label>
                             <input type="text" name="nome2" size="15" maxlength="15">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label id="rua">Sobrenome:</label>
                             <input type="text" name="sobrenome" size="15" maxlength="15">
                         </div>
                         <div class="cadastro_coluna">
@@ -80,11 +95,8 @@
                             <label>CPF:</label>
                             <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
                         </div>
-                    </fieldset>
                     <br />
                     <!-- Endereço pessoal -->
-                    <fieldset id="borda" style="width:20px; height:200px;">
-                        <legend>Dados de Endereço</legend>
                         <div class="cadastro_coluna">
                             <label id="rua">Rua:</label>
                             <input type="text" name="rua" size="33px" maxlength="60">
@@ -137,10 +149,7 @@
                                 <label id="cep">CEP: </label>
                                 <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
                             </div>
-                        </fieldset>
                     <br/>
-                    <fieldset id="borda" style="width:20px; height:200px;">
-                        <legend>Outros dados</legend>
                         <div class="cadastro_coluna">
                             <label id="inst">Instituição: </label>
                             <input type="text" name="instituição" size="29.5px" maxlength="27" >
@@ -169,11 +178,10 @@
                             <label>Cargo:</label>
                             <input type="text" name="cargo" size="27" maxlength="27"> 
                         </div>
+                            <br>
+                        <input type="submit" name="salvar" value="Salvar">
+                        <input type="button" name="sair" value="Sair">
                     </fieldset>
-                    </br>
-
-        <input type="submit" name="salvar" value="Salvar">
-        <input type="button" name="sair" value="Sair">
     </form>
     </section>
     <footer>
