@@ -265,6 +265,13 @@ form#cadastro label{
 	height:30px;
 	width:400px;
 }
+
+div#cad_form {
+        margin-top:5%;
+        margin-left:25%;
+        margin-right:10%;
+}
+
 /* ---------------------------------------------------------------------- */
 /* Relatório de Consulta */
 #consulta {
