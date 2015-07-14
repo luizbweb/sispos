@@ -271,6 +271,17 @@ div#cad_form {
         margin-left:25%;
         margin-right:10%;
 }
+fieldset#borda{
+        padding-top:0px;
+        padding-left:0px;
+        padding-right:0px;
+        border-color:#0066a3;
+        box-shadow:8px 8px 9px 0px rgba(0,0,0,0.30);
+        width:500px;
+        height:800px;
+        margin:10px 20px;
+        border: 3px solid #0066a3;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Relatório de Consulta */
