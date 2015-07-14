@@ -11,67 +11,40 @@
   <body>
   <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
     <header id="menu">
-	<div id="logo">
-		<img src="_imagens/logo_uezo_1.jpg"/>
-	</div>
+	   <div id="logo">
+		  <img src="_imagens/logo_uezo_1.jpg"/>
+	   </div>
     </header>
 	<section id="submenu">
 		<!--Lista Referente ao Submenu-->
 	</section>
-    
-<form>
-<fieldset id="field-principal" style="width:340px;height:900px">
-<!--Dados Pessoais-->
-<fieldset id="dadospessoais" style="width:20px">
- <legend>Dados Pessoais</legend>
- <table cellspacing="10" align="left">
-  <tr>
-  <td>
-    <label id="sobrenome">Matrícula: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="matricula" size="27" maxlength="27">
-   </td>
-  </tr>
-   <tr>
-   <td>
-    <label id="rua">Nome:</label>
-   </td>
-   <td align="left">
-    <input type="text" name="nome2" size="15" maxlength="15">
-   </td>
-   <tr>
-   <td>
-    <label id="numero">Sobrenome:</label>
-   </td>
-   <td align="left">
-    <input type="text" name="sobrenome" size="15" maxlength="15">
-   </td>
-  </tr>
-  </tr>
-   <td>
-    <label>Nascimento: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label id="rg">RG: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="rg" size="13" maxlength="13"> 
-   </td>
-  </tr>
-  <tr>
-   <td>
-    <label>Orgão: </label>
-   </td>
-   <td align="left">
-    <input type="text" name="rg" size="13" maxlength="13"> 
+    <section>
+        <form>
+            <div id="cad_form">
+                <!--Dados Pessoais-->
+                <fieldset id="borda" style="width:20px">
+                    <legend>Dados Pessoais</legend>
+                    <!-- Div da primeira tabela -->
+                        <div class="cadastro_coluna">
+                            <label id="sobrenome">Matrícula: </label>
+                            <input type="text" name="matricula" size="27" maxlength="27">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label id="rua">Nome:</label>
+                            <input type="text" name="nome2" size="15" maxlength="15">
+                            <input type="text" name="sobrenome" size="15" maxlength="15">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Nascimento: </label>
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label id="rg">RG: </label>
+                            <input type="text" name="rg" size="13" maxlength="13">
+                            <label>Orgão: </label>
+                            <input type="text" name="rg" size="13" maxlength="13"> 
    </td>
   </tr>
   <tr>
@@ -237,13 +210,10 @@
 </fieldset>
 </br>
 
-<input type="submit" name="salvar" value="Salvar">
-<input type="button" name="sair" value="Sair">
-
-</fieldset>
-</form>
-    
-
+        <input type="submit" name="salvar" value="Salvar">
+        <input type="button" name="sair" value="Sair">
+    </form>
+    </section>
     <footer>
 	SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
     </footer>
