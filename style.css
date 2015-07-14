@@ -282,6 +282,11 @@ fieldset#borda{
         margin:10px 20px;
         border: 3px solid #0066a3;
 }
+.itens_cadastro{
+        height: 30px;
+        margin-top: 20px 
+        margin-left: 20px;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Relatório de Consulta */
