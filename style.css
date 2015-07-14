@@ -287,7 +287,20 @@ fieldset#borda{
         margin-top: 20px 
         margin-left: 20px;
 }
-
+h3.formtitulo{
+        background-color: #0066a3;
+        text-align:center;
+        text-indent: 10px;
+        font-size: 25px;
+        color: #fff;
+        font-family: "Arial";
+        margin-bottom: 0px;
+        width: auto;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+}
 /* ---------------------------------------------------------------------- */
 /* Relatório de Consulta */
 #consulta {
