@@ -18,12 +18,12 @@
         padding-top:0px;
         padding-left:0px;
         padding-right:0px;
-        border-color:#0066a6;
+        border-color:#0066a3;
         box-shadow:8px 8px 9px 0px rgba(0,0,0,0.30);
         width:500px;
-        height:700px;
+        height:800px;
         margin:10px 20px;
-        border: 3px solid #014c88;
+        border: 3px solid #0066a3;
         }
 
     .itens_cadastro{
@@ -31,12 +31,14 @@
         margin-top: 20px 
         margin-left: 20px;
         }
-    
+    .campo {
+        size: 200;
+    }
     .menulist{
         padding-top:5px;
         }
     h3.formtitulo{
-        background-color: #014c88;
+        background-color: #0066a3;
         text-align:center;
         text-indent: 10px;
         font-size: 25px;
@@ -45,7 +47,9 @@
         margin-bottom: 0px;
         width: auto;
         padding-top: 0px;
+        padding-bottom: 8px;
         margin-top: 0px;
+        margin-bottom: 20px;
     }
 	</style>
   <body>
@@ -59,130 +63,136 @@
 		<!--Lista Referente ao Submenu-->
 	</section>
     <section>
-        <form>
             <div id="cad_form">
+                <form id="cadastro">
                 <!--Dados Pessoais-->
                 <fieldset id="borda">
-                    <h3 class="formtitulo">Aluno</h3>
+                        <h3 class="formtitulo">Aluno</h3>
                         <div class="cadastro_coluna">
-                            <label id="sobrenome">Matrícula: </label>
-                            <input type="text" name="matricula" size="27" maxlength="27">
+                            <label>Matrícula: </label>
+                            <input class="campo" type="text" name="matricula" maxlength="27">
                         </div>
                         <div class="cadastro_coluna">
-                            <label id="rua">Nome:</label>
-                            <input type="text" name="nome2" size="15" maxlength="15">
+                            <label>Nome:</label>
+                            <input class="campo" type="text" name="nome2" maxlength="15">
                         </div>
                         <div class="cadastro_coluna">
-                            <label id="rua">Sobrenome:</label>
-                            <input type="text" name="sobrenome" size="15" maxlength="15">
+                            <label>Sobrenome:</label>
+                            <input class="campo" type="text" name="sobrenome" maxlength="15">
                         </div>
                         <div class="cadastro_coluna">
                             <label>Nascimento: </label>
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input class="campo" type="text" name="dia" size="2" maxlength="2" value="dd"> 
                         </div>
                         <div class="cadastro_coluna">
-                            <label id="rg">RG: </label>
-                            <input type="text" name="rg" size="13" maxlength="13">
-                            <label>Orgão: </label>
-                            <input type="text" name="rg" size="13" maxlength="13"> 
+                            <label>RG: </label>
+                            <input class="campo" type="text" name="rg" maxlength="13">
+                        </div>
                         <div class="cadastro_coluna">
-                            <label id="rg">Expedição: </label>
-                            <input type="text" name="rg" size="13" maxlength="13">
+                            <label>Orgão: </label>
+                            <input class="campo" type="text" name="rg"  maxlength="13">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Expedição: </label>
+                            <input class="campo" type="text" name="rg" smaxlength="13">
                         </div>
                         <div class="cadastro_coluna">
                             <label>CPF:</label>
-                            <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+                            <input class="campo" type="text" name="cpf"  maxlength="11">
                         </div>
-                    <br />
-                    <!-- Endereço pessoal -->
+                        <br />
+                        <!-- Endereço pessoal -->
                         <div class="cadastro_coluna">
-                            <label id="rua">Rua:</label>
-                            <input type="text" name="rua" size="33px" maxlength="60">
-                        </div>
-                        <div class="cadastro_coluna">
-                            <label id="numero">N°:</label>
-                            <input type="text" name="numero" size="5px" maxlength="4">
+                            <label>Rua:</label>
+                            <input class="campo" type="text" name="rua"  maxlength="60">
                         </div>
                         <div class="cadastro_coluna">
-                            <label id="bairro">Bairro: </label>
-                            <input type="text" name="bairro" size="30" maxlength="50">
+                            <label>N°:</label>
+                            <input class="campo" type="text" name="numero"  maxlength="4">
                         </div>
-                            <div class="cadastro_coluna">
-                                <label id="estado">Estado:</label>
-                                <select name="estado"> 
-                                    <option value="ac">Acre</option> 
-                                    <option value="al">Alagoas</option> 
-                                    <option value="am">Amazonas</option> 
-                                    <option value="ap">Amapá</option> 
-                                    <option value="ba">Bahia</option> 
-                                    <option value="ce">Ceará</option> 
-                                    <option value="df">Distrito Federal</option> 
-                                    <option value="es">Espírito Santo</option> 
-                                    <option value="go">Goiás</option> 
-                                    <option value="ma">Maranhão</option> 
-                                    <option value="mt">Mato Grosso</option> 
-                                    <option value="ms">Mato Grosso do Sul</option> 
-                                    <option value="mg">Minas Gerais</option> 
-                                    <option value="pa">Pará</option> 
-                                    <option value="pb">Paraíba</option> 
-                                    <option value="pr">Paraná</option> 
-                                    <option value="pe">Pernambuco</option> 
-                                    <option value="pi">Piauí</option> 
-                                    <option value="rj">Rio de Janeiro</option> 
-                                    <option value="rn">Rio Grande do Norte</option> 
-                                    <option value="ro">Rondônia</option> 
-                                    <option value="rs">Rio Grande do Sul</option> 
-                                    <option value="rr">Roraima</option> 
-                                    <option value="sc">Santa Catarina</option> 
-                                    <option value="se">Sergipe</option> 
-                                    <option value="sp">São Paulo</option> 
-                                    <option value="to">Tocantins</option>
-                                </select>
-                            </div>
-                            <div class="cadastro_coluna">
-                                <label id="cidade">Cidade: </label>
-                                <input type="text" name="cidade">
-                                                    </div>
-                            <div class="cadastro_coluna">
-                                <label id="cep">CEP: </label>
-                                <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
-                            </div>
-                    <br/>
                         <div class="cadastro_coluna">
-                            <label id="inst">Instituição: </label>
-                            <input type="text" name="instituição" size="29.5px" maxlength="27" >
+                            <label>Bairro: </label>
+                            <input class="campo" type="text" name="bairro"  maxlength="50">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Estado:</label>
+                            <select class="campo" name="estado"> 
+                                <option value="ac">Acre</option> 
+                                <option value="al">Alagoas</option> 
+                                <option value="am">Amazonas</option> 
+                                <option value="ap">Amapá</option> 
+                                <option value="ba">Bahia</option> 
+                                <option value="ce">Ceará</option> 
+                                <option value="df">Distrito Federal</option> 
+                                <option value="es">Espírito Santo</option> 
+                                <option value="go">Goiás</option> 
+                                <option value="ma">Maranhão</option> 
+                                <option value="mt">Mato Grosso</option> 
+                                <option value="ms">Mato Grosso do Sul</option> 
+                                <option value="mg">Minas Gerais</option> 
+                                <option value="pa">Pará</option> 
+                                <option value="pb">Paraíba</option> 
+                                <option value="pr">Paraná</option> 
+                                <option value="pe">Pernambuco</option> 
+                                <option value="pi">Piauí</option> 
+                                <option value="rj">Rio de Janeiro</option> 
+                                <option value="rn">Rio Grande do Norte</option> 
+                                <option value="ro">Rondônia</option> 
+                                <option value="rs">Rio Grande do Sul</option> 
+                                <option value="rr">Roraima</option> 
+                                <option value="sc">Santa Catarina</option> 
+                                <option value="se">Sergipe</option> 
+                                <option value="sp">São Paulo</option> 
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Cidade: </label>
+                            <input class="campo" type="text" name="cidade">
+                                                </div>
+                        <div class="cadastro_coluna">
+                            <label>CEP: </label>
+                            <input class="campo" type="text" name="cep"  maxlength="8">
+                        </div>
+                        <br/>
+                        <div class="cadastro_coluna">
+                            <label>Instituição: </label>
+                            <input class="campo" type="text" name="instituição"  maxlength="27" >
                         </div>
                         <div class="cadastro_coluna">
                             <label>Inicio: </label>
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input class="campo" type="text" name="dia" size="2" maxlength="2" value="dd">
                         </div>
                         <div class="cadastro_coluna">
                             <label>Termino: </label>
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input class="campo" type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input class="campo" type="text" name="dia" size="2" maxlength="2" value="dd">
                         </div>
                         <div class="cadastro_coluna">
                             <label>Profissão: </label>
-                            <input type="text" name="profissao" size="27" maxlength="27"> 
+                            <input class="campo" type="text" name="profissao"  maxlength="27"> 
                         </div>
                         <div class="cadastro_coluna">
                             <label id="rg">Empresa: </label>
-                            <input type="text" name="empresa" size="27" maxlength="27"> 
+                            <input class="campo" type="text" name="empresa"  maxlength="27"> 
                         </div>
                         <div class="cadastro_coluna">
                             <label>Cargo:</label>
-                            <input type="text" name="cargo" size="27" maxlength="27"> 
+                            <input class="campo" type="text" name="cargo"  maxlength="27"> 
                         </div>
-                            <br>
-                        <input type="submit" name="salvar" value="Salvar">
-                        <input type="button" name="sair" value="Sair">
+                        <br>
+                        <div class="cadastro_coluna">
+                            <input type="submit" name="salvar" value="Salvar">
+                            <input type="button" name="sair" value="Sair">
+                        </div>
                     </fieldset>
-    </form>
+            </form>
+        </div>
     </section>
     <footer>
 	SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
