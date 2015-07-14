@@ -247,7 +247,7 @@ form#cadastro {
 }
 
 form#cadastro input.campo, form#cadastro select.campo{
-	color: #02F;
+	color: #0066a3;
 	border: solid 2px #9CF;
 	border-left: solid 5px #6FC2F4;
 	margin: 4px;
