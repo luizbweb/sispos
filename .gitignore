@@ -1,1 +1,5 @@
 *.xml
+*.location
+*.jnl
+*.apm
+_imagens/LoginRegistrationForm
