@@ -1,7 +1,7 @@
 <html !DOCTYPE>
 <html lang="pt-br">
   <head>
-    <title>SISPOS</title>
+    <title>Cadastro de Disciplinas</title>
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
@@ -23,51 +23,56 @@
 	<section>
         <div id="cad_form">
             <form id="cadastro">
-                <div class="cadastro_coluna">
-                    <label value="Nome">Nome:</label>
-                    <input class="campo" type="text" />
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Carga_horaria">Carga Horária:</label>
-                    <input class="campo" type="text"/>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Credito">Crédito:</label>
-                    <input class="campo" type="text"/>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Professor">Professor:</label>
-                    <select class="campo">
-                        <option></option>
-                        <option>Professor 1</option>
-                        <option>Professor 2</option>
-                        <option>Professor 3</option>
-                    </select>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Horario_inicio">Horário de Início:</label>
-                    <input class="campo" type="text"/>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Horario_termino">Horário de Término:</label>
-                    <input class="campo" type="text"/>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Curso">Curso:</label>
-                    <select class="campo">
-                        <option></option>
-                        <option>Curso 1</option>
-                        <option>Curso 2</option>
-                        <option>Curso 3</option>
-                    </select>
-                </div>
-                <div class="cadastro_coluna">
-                    <label value="Periodo">Período:</label>
-                    <input class="campo" type="text"/>
-                </div>
-                <div class="cadastro_coluna">	
-                    <input id="btn_cadastrar" type="button" value="Cadastrar" />
-                </div>
+                <fieldset id="borda">
+                    <h3 class="formtitulo">Cadastro de Disciplinas</h3>
+                    <div class="cadastro_coluna">
+                        <label value="Nome">Nome:</label>
+                        <input class="campo" type="text" />
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Carga_horaria">Carga Horária:</label>
+                        <input class="campo" type="text"/>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Credito">Crédito:</label>
+                        <input class="campo" type="text"/>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Professor">Professor:</label>
+                        <select class="campo">
+                            <option></option>
+                            <option>Professor 1</option>
+                            <option>Professor 2</option>
+                            <option>Professor 3</option>
+                        </select>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Horario_inicio">Horário de Início:</label>
+                        <input class="campo" type="text"/>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Horario_termino">Horário de Término:</label>
+                        <input class="campo" type="text"/>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Curso">Curso:</label>
+                        <select class="campo">
+                            <option></option>
+                            <option>Curso 1</option>
+                            <option>Curso 2</option>
+                            <option>Curso 3</option>
+                        </select>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <label value="Periodo">Período:</label>
+                        <input class="campo" type="text"/>
+                    </div>
+                    <div class="cadastro_coluna">
+                        <br>
+                        <input id="btn_cadastrar" type="button" value="Cadastrar" />
+                        <input id="btn_limpar" type="reset" value="Limpar">
+                    </div>
+                </fieldset>
             </form>
         </div>
     </section>
