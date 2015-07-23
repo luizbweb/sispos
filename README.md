@@ -14,8 +14,9 @@ Selecione o projeto, clique em Finish
 
 # Softwares:
 
-- Eclipse IDE
+- Eclipse IDE (Versão Java EE)
 - Maven mais recente (3.3.3)
+- Apache Tomcat 7 (http://ftp.unicamp.br/pub/apache/tomcat/tomcat-7/v7.0.63/bin/apache-tomcat-7.0.63.zip)
 
 Como instalar o Maven:
 
