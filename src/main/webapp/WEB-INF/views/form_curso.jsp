@@ -6,7 +6,7 @@
 <head>
 		<title>Cadastro de Curso</title>
 		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-		<link title="css" href="style.css" type="text/css" rel="stylesheet" />
+		<link title="css" href="resources/css/style.css" type="text/css" rel="stylesheet" />
 		<link type="image/x-icon" rel="shortcut icon" href="" />
 	</head>
     
@@ -14,7 +14,7 @@
 	<div id="main"> <!-- Principal div que comporta o conteúdo do site -->
 		<header id="menu">
 			<div id="logo">
-				<img src="_imagens/logo_uezo_1.jpg"/>
+				<img src="imagens/logo_uezo_1.jpg"/>
 			</div>
 		</header>
 		<section id="submenu">
