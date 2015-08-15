@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UsuarioController {
 	
 	@RequestMapping(method=RequestMethod.POST)
-	public void cadastro() { 
+	public void form() { 
 		//return "cadastro_de_usuario";
 	}
 	

@@ -1,21 +1,16 @@
 package org.lema.sispos.controller;
 
-import org.lema.sispos.modelo.Aluno;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+@RequestMapping("/aluno")
 public class AlunoController {
 	
-	@RequestMapping("/cadastrarAluno")
-	public String cadastrarAluno(){
+	@RequestMapping(method=RequestMethod.POST)
+	public String form(){
 		return "cadastrarAluno";
-	}
-	
-	@RequestMapping("/aluno")
-	public void aluno(Aluno aluno){
-		System.out.println("Matricula: " + aluno.getMatricula());
-		
 	}
 
 }
