@@ -15,7 +15,9 @@ public class Endereco {
 		this.complemento = complemento;
 		this.numero = numero;
 	}
-
+	
+	public Endereco() {}
+	
 	public String getPais() {
 		return pais;
 	}

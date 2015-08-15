@@ -88,6 +88,8 @@ public class Usuario {
 	public String getNacionalidade() {
 		return nacionalidade;
 	}
+	
+	public Usuario() {}
 
 	public Usuario(String nome, String sobrenome, String cpf, String rg,
 			String dataDeNascimento, String raca, String nacionalidade,
