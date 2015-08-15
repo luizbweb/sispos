@@ -19,8 +19,10 @@ public class Configurador extends WebMvcConfigurerAdapter {
 	public ViewResolver viewResolver() { 
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		
+		viewResolver.setExposeContextBeansAsAttributes(true);
 		viewResolver.setPrefix("/WEB-INF/views/");
 		viewResolver.setSuffix(".jsp");
+		
 		
 		return viewResolver;
 		
