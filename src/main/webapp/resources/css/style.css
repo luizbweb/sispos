@@ -1,0 +1,364 @@
+/* --- CORES
+Azul UEZO 1: #014c88
+Azul UEZO 2: #0066a6
+Azul UEZO Forte: #0055bb
+Azul UEZO Claro: #5eabd9
+Cinza Claro: #999999
+Cinza Escuro: #4c4c4c
+*/
+
+/* ------------------ CSS GERAL ------------------ */
+body{
+	background-color: #5eabd9;
+	margin:0px;
+	padding:5px;
+	font-family: "Arial";
+}
+/* --- HTML 5 --- */
+header{
+	background-color: #0066a6;
+	background-image: url('_imagens/logomarcadagua.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	-moz-background-size:400px;
+	-o-background-size:400px;
+	-webkit-background-size:400px;
+	background-size: 400px;
+
+	padding: 5px 0px;
+	height:130px;
+	width:100%;
+
+	border-bottom: 2px #014c88 solid;
+}
+section {
+	display: block;
+
+	background-color:#fff;
+
+	margin: 0px;
+	padding: 5px;
+	height:100%;
+}
+footer {
+	color: #fff;
+	background-color: #0066a6;
+
+	border-top: 2px #014c88 solid;
+
+	padding: 5px 0px;
+	width: 100%;
+	min-height: 15px;
+
+	text-align: center;
+	font-size: 15px;
+
+	clear: both;
+}
+/* -------------- */
+/* Estrutura Total */
+div#main {
+	background-color: #fff;
+    	box-shadow: 0px 4px 10px 3px #4c4c4c;
+
+	margin: 0px auto;
+	width: 90%;
+	min-height: 400px;
+	position: relative;
+
+}
+/* -------------- */
+/* Caixa de Formulário */
+form#login {
+	background-color:#0066a6;
+
+	top: 100px;
+	width: 250px;
+	height: 150px;
+	position: relative;
+	margin: 0px auto;
+	padding: 0px;
+
+	border-style: solid;
+    border-width: 3px;
+	border-color: #014c88;
+	border-radius: 3px;
+}
+div#titlogin{
+	background-color: #014c88;
+	color: #fff;
+	text-decoration: bold;
+	text-align: center;
+
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 3px;
+
+	width: 250px;
+	height: 30px;
+}
+form#login input.campo{
+	color: #014c88;
+	border: solid 2px #ccc;
+	border-left: solid 5px #ccc;
+	float: right;
+	margin: 4px;
+}
+form#login label{
+	float: left;
+	margin: 4px;
+	color: #fff;
+}
+/* -------------- */
+/* Botão */
+#btn_entrar {
+	background: #f5f5f5;
+	color: #0066a6;
+
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #dae0e3);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #dae0e3);
+	background-image: -ms-linear-gradient(top, #f5f5f5, #dae0e3);
+	background-image: -o-linear-gradient(top, #f5f5f5, #dae0e3);
+	background-image: linear-gradient(to bottom, #f5f5f5, #dae0e3);
+
+	-webkit-border-radius: 7;
+	-moz-border-radius: 7;
+	border-radius: 7px;
+	border-style: solid;
+	border-color: #0066a6;
+
+	font-family: Arial;
+	font-size: 15px;
+	text-decoration: none;
+
+	padding: 3px 23px;
+	margin: 0px 80px;
+
+	-webkit-transition: background-image 10s;
+    	transition: background-image 10s;
+}
+#btn_entrar:hover {
+	cursor: pointer;
+	background: #014c88;
+	color: #f5f5f5;
+
+	background-image: -webkit-linear-gradient(top, #014c88, #0066a6);
+	background-image: -moz-linear-gradient(top, #014c88, #0066a6);
+	background-image: -ms-linear-gradient(top, #014c88, #0066a6);
+	background-image: -o-linear-gradient(top, #014c88, #0066a6);
+	background-image: linear-gradient(to bottom, #014c88, #0066a6);
+
+	border-color: #f5f5f5;
+
+	text-decoration: none;
+}
+/* -------------- */
+/* Outros */
+a#destaque{
+	bottom:3px;
+	right: 3px;
+	position: absolute;
+	margin:0px;
+
+	text-shadow: 5px;
+	color: #fff;
+	font-size: 10px;
+	text-decoration: none;
+}
+a#destaque:hover{
+	color: #fff;
+	text-decoration:underline;
+}
+/* ---------------------------------------------------------------------- */
+/* Página Principal */
+div.coluna {
+	background-color: #fff;
+
+	width: 49%;
+	margin: 0px 4px;
+	float: left;
+
+	min-height: 400px;
+}
+div.bloco {
+	border: 1px solid #014c88;
+	border-radius: 3px;
+
+	width: 90%;
+	min-height: 200px;
+	margin: 10px;
+}
+h3.menutitulo{
+    background-color: #014c88;
+    border-radius: 2px;
+
+    text-align:center;
+	text-indent: 10px;
+	font-size: 25px;
+	color: #fff;
+	font-family: "Arial";
+
+	margin-bottom: 0px;
+	width: auto;
+
+	padding-top: 0px;
+	margin-top: 0px;
+}
+a.menulink {
+	text-decoration: none;
+	color: #4c4c4c;
+
+    transition: color 0.5s;
+}
+a:hover {
+    color: #aaa;
+}
+ul.menulist {
+	margin-top: 3px;
+	margin-left: 0px;
+	padding-left: 15px;
+	list-style-type: none;
+	width: auto;
+	font-size: 20px
+}
+ul.menulist li {
+	padding: 2px;
+}
+/* -------------- */
+/*Espaçamento de DIVs para páginas com formulário*/
+#submenu {
+    width:20%;
+    float:left;
+    background: #DDD;
+    min-height: 1000px;
+}
+
+#formulario {
+    width:78.2%;
+    float: left;
+    min-height: 1000px;
+}
+
+/*-----------------------------------------------*/
+/*Formulário geral*/
+form#cadastro {
+    width:400px;
+}
+
+form#cadastro input.campo, form#cadastro select.campo{
+	color: #0066a3;
+	border: solid 2px #9CF;
+	border-left: solid 5px #6FC2F4;
+	margin: 4px;
+	float: right;
+}
+
+form#cadastro label{
+	float: left;
+	margin: 4px;
+	color: #0066a3;
+}
+
+.cadastro_coluna {
+	margin: 0 auto;
+	height:30px;
+	width:400px;
+}
+
+div#cad_form {
+        margin-top:5%;
+        margin-left:25%;
+        margin-right:10%;
+}
+fieldset#borda{
+        padding-top:0px;
+        padding-left:0px;
+        padding-right:0px;
+        border-color:#0066a3;
+        box-shadow:8px 8px 9px 0px rgba(0,0,0,0.30);
+        width:500px;
+        height:800px;
+        margin:10px 20px;
+        border: 3px solid #0066a3;
+}
+.itens_cadastro{
+        height: 30px;
+        margin-top: 20px 
+        margin-left: 20px;
+}
+h3.formtitulo{
+        background-color: #0066a3;
+        text-align:center;
+        text-indent: 10px;
+        font-size: 25px;
+        color: #fff;
+        font-family: "Arial";
+        margin-bottom: 0px;
+        width: auto;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+}
+/* ---------------------------------------------------------------------- */
+/* Relatório de Consulta */
+#consulta {
+	float:left;
+	width:400px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+
+form#cadastro ul {
+	list-style-type: none;
+	margin: 2px;
+}
+
+/*-------------------------------------------------------------*/
+/* Consulta.html */
+
+div#div-consulta {
+	margin: 0 auto;
+ 	width: 50%;
+}
+
+div#div-consulta form#form-consulta{
+	margin: 0 auto;
+ 	width: 50%;
+ 		
+}
+
+div#div-form {
+ 	width: 500px;
+
+
+}
+
+div#div-consulta img {
+	width: 500px;
+
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* Responsividade Geral*/
+
+/* Rever essa aplicação, estava conflitando com outra class main*/
+@media (max-width: 360px){
+	header img{
+		width: 100%;
+	}
+	div#main{
+		margin: 0px 0px;
+		width: 100%;
+	}
+}
+@media (max-width: 908px){
+	div.coluna{
+		width: 98%;
+	}
+	div.bloco{
+		width: 94%;
+	}
+}

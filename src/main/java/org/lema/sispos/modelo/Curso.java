@@ -1,7 +1,9 @@
 package org.lema.sispos.modelo;
 
 public final class Curso {
-	private String nome;
+	
+
+	private String nome,coordenacao;
 	private String identificacao;
 	private int duracao;
 	private AreaDoConhecimento area;
@@ -50,13 +52,32 @@ public final class Curso {
 		}
 		
 	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	
 	public String getNome() {
 		return nome;
 	}
 
+	public String getCoordenacao() {
+		return coordenacao;
+	}
+
+	public void setCoordenacao(String coordenacao) {
+		this.coordenacao = coordenacao;
+	}
+	
+	public void setIdentificacao(String identificacao) {
+		this.identificacao = identificacao;
+	}
+
 	public String getIdentificacao() {
 		return identificacao;
+	}
+
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
 	}
 
 	public int getDuracao() {
