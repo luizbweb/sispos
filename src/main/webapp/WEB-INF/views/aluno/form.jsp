@@ -1,18 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <title>Cadastroo de Aluno</title>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
 </head>
 <body>
 <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
     <header id="menu">
 	   <div id="logo">
-		  <img src="_imagens/logo_uezo_1.jpg"/>
+		  <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
 	   </div>
     </header>
 	<section id="submenu">
