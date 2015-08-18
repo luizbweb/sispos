@@ -1,6 +1,14 @@
 package org.lema.sispos.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Disciplina {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String nome, curso;
 	//Curso curso;
 	int cargaHoraria;
