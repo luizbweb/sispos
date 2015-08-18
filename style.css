@@ -339,7 +339,21 @@ div#div-consulta img {
 	width: 500px;
 
 }
-
+.campo-consulta {
+    border: 1px solid rgba(0, 0, 250, 0.6);
+    padding: 8px;
+    border-style: solid;
+    width: 150px;
+}
+.botao-consulta {
+    padding: 8px;
+    background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+    -moz-user-select: none;
+    background-color: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: #444;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
