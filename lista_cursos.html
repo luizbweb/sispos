@@ -1,38 +1,69 @@
 <html !DOCTYPE>
 <html lang="pt-br">
   <head>
-    <title>SISPOS</title>
+    <title>SISPOS - Resultado da Consulta de Alunos</title>
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
     <link title="css" href="style.css" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
+<style>
+	#resultados {
+		float: left;
+		padding: 20px;
+	}
+	.list {
+		list-style-type: none;
+		text-align: left;
+                padding: 5px;
+		background-color: #eee;
+	}
+        .list_titulos {
+                background-color: #ccf;
+		font-weight: bold;
+        }
+        .titulos {
+                display: inline-block;
+                width: 140px;
+        }
+</style>
   <body>
-    <div id="main">
-      <header id="menu">
-        <div id="logo">
-          <img src="_imagens/logo_uezo_1.jpg"/>
-        </div>
-      </header>
-      <section id="submenu">
-        <!--Lista Referente ao Submenu-->
-      </section>
-      <section id="formulario" style="width:70%;">
-        <div id="consulta">
-          <a href="" style="text-decoration:none;color:#00B;">Voltar</a> <br />
-          <b>Nome:</b> <i>Nome do Curso</i> <br />
-	      <b>Coordenação:</b> <i>Coordenação do Curso</i> <br />
-          <b>ID:</b> <i>Identificação do Curso</i> <br />
-          <b>Duração:</b> <i>Duração Prevista do Curso</i> <br />
-		  <b>Tipo:</b> <i>Área de Conhecimento do Curso</i> <br />
-          <b>Horário de Término:</b> <i>Horário de Término da Disciplina</i> <br />
-	  <br /> <input type="button" value="imprimir">
-        </div>
-      </section>
-      <footer>
-        SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
-      </footer>
-    </div>
+  <div id="main">
+    <header id="menu">
+	
+	<div id="logo">
+		<img src="_imagens/logo_uezo_1.jpg"/>
+	</div>
+    </header>
+    	<section id="submenu">
+		<!--Lista Referente ao Submenu-->
+	</section>
+	<section id="resultados">
+		<div id="lista_alunos">
+			<ul class="list list_titulos">
+				<li><b align="justify"><div  class="titulos">Nome</div> <div class="titulos">Coordenação</div> <div class="titulos">Identificação</div><div class="titulos">Duração</div> <div class="titulos">Tipo</div> <div class="titulos">Horário</div></b> 
+			</ul>
+			<ul class="list">
+                                <li>
+					<div class="titulos">Nome</div>
+					<div class="titulos">Coordenação</div>
+					<div class="titulos">Identificação</div>
+					<div class="titulos">Duração</div>
+					<div class="titulos">Tipo</div>
+					<div class="titulos">Horário</div>
+					<div class="titulos">
+						<input type="button" value="Hist" />
+						<input type="button" value="Cart" />
+						<input type="button" value="Decl" />
+					</div>
+                        </ul>
+		</div>
+	
+    	</section>
+  <footer>
+	SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
+  </footer>
+  </div>
   </body>
 </html>
