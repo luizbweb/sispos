@@ -11,7 +11,7 @@ public class Initializador extends AbstractAnnotationConfigDispatcherServletInit
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] { Configurador.class };
+		return new Class[] { Configurador.class, JPAConfigurador.class };
 	}
 
 	@Override

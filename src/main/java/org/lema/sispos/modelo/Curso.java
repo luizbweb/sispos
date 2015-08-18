@@ -1,9 +1,18 @@
 package org.lema.sispos.modelo;
 
-public final class Curso {
-	
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-	private String nome,coordenacao;
+@Entity
+public class Curso {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	private String nome;
+	private String coordenacao;
 	private String identificacao;
 	private int duracao;
 	private AreaDoConhecimento area;
@@ -12,7 +21,7 @@ public final class Curso {
 		
 	}
 
-	private Curso(String nome, String identificacao, int duracao,
+	public Curso(String nome, String identificacao, int duracao,
 				  AreaDoConhecimento area) {
 
 		this.nome = nome;
@@ -21,37 +30,10 @@ public final class Curso {
 		this.area = area;
 	}
 	
-	public static class Builder {
-		public Curso curso = new Curso();
-		
-		public Builder comNome(String nome) {
-			curso.nome = nome;
-			return this;
-		}
-		
-		public Builder comIdentificacao(String identificacao) {
-			curso.identificacao = identificacao;
-			return this;
-		}
-		
-		public Builder comDuracao(int duracao) {
-			curso.duracao = duracao;
-			return this;
-		}
-		
-		public Builder comArea(AreaDoConhecimento area) {
-			curso.area = area;
-			return this;
-		}
-		
-		public Curso build() {
-			return new Curso(curso.getNome(), 
-							 curso.getIdentificacao(),
-							 curso.getDuracao(), 
-							 curso.getArea());
-		}
-		
+	public Long getId() {
+		return id;
 	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}

@@ -4,9 +4,20 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Calendar;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 import org.lema.sispos.exception.DomainException;
 
+@Entity
 public class Matricula {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
 	private int ano; 
 	private int semestre;
 	private int classificacao;
@@ -14,12 +25,17 @@ public class Matricula {
 	private int mesAtual;
 	private int semestreAtual;
 	
-	private String curso;
+	@ManyToOne
+	private Curso curso;
 
 	public int getAno() {
 		return ano;
 	}
-
+	
+	public Long getId() {
+		return id;
+	}
+	
 	public int getSemestre() {
 		return semestre;
 	}
@@ -28,11 +44,11 @@ public class Matricula {
 		return classificacao;
 	}
 
-	public String getCurso() {
+	public Curso getCurso() {
 		return curso;
 	}
 
-	public Matricula(String curso, int ano, int semestre, int classificacao) {
+	public Matricula(Curso curso, int ano, int semestre, int classificacao) {
 		this.anoAtual = getAnoAtual();
 		this.mesAtual = getMesAtual();
 		this.semestreAtual = getSemestreAtual(mesAtual);
@@ -90,7 +106,7 @@ public class Matricula {
 		NumberFormat nf = new DecimalFormat("000");
 		String classificacao = nf.format(this.classificacao);
 		
-		return curso + ano + semestre + classificacao;
+		return curso.getIdentificacao() + ano + semestre + classificacao;
 	}
 	
 }

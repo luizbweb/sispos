@@ -33,7 +33,7 @@
                         </div>
                         <div class="cadastro_coluna">
                             <label>Nome:</label>
-                            <input class="campo" type="text" name="nome2" maxlength="15">
+                            <input class="campo" type="text" name="nome" maxlength="15">
                         </div>
                         <div class="cadastro_coluna">
                             <label>Sobrenome:</label>
