@@ -122,9 +122,9 @@ form#login label{
 	background-image: -o-linear-gradient(top, #f5f5f5, #dae0e3);
 	background-image: linear-gradient(to bottom, #f5f5f5, #dae0e3);
 
-	-webkit-border-radius: 7;
-	-moz-border-radius: 7;
-	border-radius: 7px;
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
 	border-style: solid;
 	border-color: #0066a6;
 
