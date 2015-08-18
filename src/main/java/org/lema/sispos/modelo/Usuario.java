@@ -1,6 +1,14 @@
 package org.lema.sispos.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Usuario {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String nome, sobrenome, cpf, rg, dataDeNascimento, raca, nacionalidade,
 			telefone, celular, email, login, senha;
 	Endereco endereco;
