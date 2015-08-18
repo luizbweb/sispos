@@ -8,6 +8,20 @@
     <link title="css" href="style.css" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
+    <style>
+        .campo-consulta {
+        border-color: cornflowerblue;
+        border-radius: 3px;
+        padding: 8px;
+        border-style: solid;
+        width: 150px;
+        }
+        .botao-consulta {
+        border-radius: 3px;
+        padding: 8px;
+        border-style: outset;
+        }
+    </style>
 
   <body>
   <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
@@ -23,8 +37,8 @@
 		    
         <div id="div-form">
           <form id="form-consulta">
-    			 <input type="text" placeholder="  Digite sua Pesquisa"/>
-    			 <button type="submit">Pesquisar</button>
+    			 <input class="campo-consulta" type="text" placeholder="Nome do aluno"/>
+    			 <button class="botao-consulta" type="submit">Pesquisar</button>
           </form>
         </div>
 		  </div>
