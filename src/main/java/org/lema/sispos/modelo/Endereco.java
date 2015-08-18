@@ -1,6 +1,10 @@
 package org.lema.sispos.modelo;
 
+@Entity
 public class Endereco {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	String pais, uf, cidade, municipio, bairro, logradouro, complemento;
 	int numero;
 
