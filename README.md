@@ -1,3 +1,12 @@
+# Importante
+
+Necessário criar um database com o nome "sappg"
+
+No Mysql, digite:
+
+create database sappg;
+
+
 # Instruções
 
 git clone git@github.com:leonardocordeiro/sistema-pos-back.git 
