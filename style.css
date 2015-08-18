@@ -354,6 +354,19 @@ div#div-consulta img {
     border-radius: 2px;
     color: #444;
 }
+h3.consultatitulo{
+    text-align:center;
+    text-indent: 10px;
+    font-size: 25px;
+    color: #014c88;
+    font-family: "Arial";
+    margin-bottom: 0px;
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
