@@ -381,12 +381,12 @@ h3.consultatitulo{
 	background-color: #eee;
 }
 .list_titulos {
-    background-color: #ccf;
+    background-color: #5eabd9;
 	font-weight: bold;
 }
 .titulos {
     display: inline-block;
-    width: 140px;
+    width: 19%;
 }
 .editar {
     background-image: url(icones/glyphicons-31-pencil.png);
