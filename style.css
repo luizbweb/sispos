@@ -367,7 +367,26 @@ h3.consultatitulo{
     margin-top: 0px;
     margin-bottom: 20px;
 }
+/* Resultados de Consultas - Listas */
 
+#resultados {
+	float: left;
+	padding: 20px;
+}
+.list {
+	list-style-type: none;
+	text-align: left;
+    padding: 5px;
+	background-color: #eee;
+}
+   .list_titulos {
+    background-color: #ccf;
+	font-weight: bold;
+       }
+   .titulos {
+    display: inline-block;
+    width: 140px;
+       }
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
 
