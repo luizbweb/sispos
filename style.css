@@ -387,7 +387,7 @@ h3.consultatitulo{
     display: inline-block;
     width: 140px;
 }
-.ver {
+.editar {
     background-image: url(icones/glyphicons-31-pencil.png);
     background-repeat: no-repeat;
     background-position: center;
