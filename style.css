@@ -320,37 +320,29 @@ form#cadastro ul {
 
 div#div-consulta {
 	margin: 0 auto;
- 	width: 50%;
-}
-
-div#div-consulta form#form-consulta{
-	margin: 0 auto;
- 	width: 50%;
- 		
-}
-
-div#div-form {
- 	width: 500px;
-
-
-}
-
-div#div-consulta img {
-	width: 500px;
-
+ 	width: 75%;
+    float:left;
+    text-align: center;
 }
 .campo-consulta {
-    border: 1px solid rgba(0, 0, 250, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 8px;
     border-style: solid;
-    width: 150px;
+    width: 250px;
 }
+.campo-consulta:hover {
+    border: 1px solid rgba(140, 180, 250, 1);
+}
+.campo-consulta:focus {
+    border: 1px solid rgba(140, 180, 250, 1);
+}
+
 .botao-consulta {
     padding: 8px;
     background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
     -moz-user-select: none;
     background-color: #F5F5F5;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     color: #444;
 }
