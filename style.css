@@ -372,6 +372,7 @@ h3.consultatitulo{
 #resultados {
 	float: left;
 	padding: 20px;
+    width: 70%;
 }
 .list {
 	list-style-type: none;
