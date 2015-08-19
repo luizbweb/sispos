@@ -388,6 +388,9 @@ h3.consultatitulo{
     display: inline-block;
     width: 19%;
 }
+.titulos .final {
+    align-items: flex-end;
+}
 .editar {
     background-image: url(icones/glyphicons-31-pencil.png);
     background-repeat: no-repeat;
@@ -397,6 +400,10 @@ h3.consultatitulo{
     width: 30px;
     height: 30px;
 }
+.editar:hover {
+    background-image: url(icones/glyphicons-31-pencil-hover.png);
+}
+
 .historico {
     background-image: url(icones/glyphicons-58-history.png);
     background-repeat: no-repeat;
@@ -405,6 +412,9 @@ h3.consultatitulo{
     background-color: rgba(0, 0, 0, 0.0);
     width: 30px;
     height: 30px;
+}
+.historico:hover {
+    background-image: url(icones/glyphicons-58-history-hover.png);
 }
 .carteirinha {
     background-image: url(icones/glyphicons-268-credit-card.png);
@@ -415,6 +425,9 @@ h3.consultatitulo{
     width: 30px;
     height: 30px;
 }
+.carteirinha:hover {
+    background-image: url(icones/glyphicons-268-credit-card-hover.png);
+}
 .declara {
     background-image: url(icones/glyphicons-37-file.png);
     background-repeat: no-repeat;
@@ -424,7 +437,9 @@ h3.consultatitulo{
     width: 30px;
     height: 30px;
 }
-
+.declara:hover {
+    background-image: url(icones/glyphicons-37-file-hover.png);
+}
 
 /* ---------------------------------------------------------------------- */
 /* Responsividade Geral*/
