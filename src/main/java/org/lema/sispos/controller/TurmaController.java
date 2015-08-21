@@ -4,12 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/disciplina")
-public class DisciplinaController {
+@RequestMapping("/turma")
+public class TurmaController {
 	
 	@RequestMapping("/form")
 	public String form(){
-		return "disciplina/form";
+		return "turma/form";
 	}
 
 }
