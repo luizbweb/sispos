@@ -43,7 +43,7 @@ public class JPAConfigurador {
 		}
 
 		ds.setUser("root");
-		ds.setPassword("");
+		ds.setPassword("senha");
 		ds.setJdbcUrl("jdbc:mysql://localhost/sappg");
 		return ds;
 	}

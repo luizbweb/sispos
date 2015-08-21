@@ -4,14 +4,30 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Usuario {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	String nome, sobrenome, cpf, rg, dataDeNascimento, raca, nacionalidade,
-			telefone, celular, email, login, senha;
-	Endereco endereco;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private String nome;
+	private String sobrenome; 
+	private String cpf;
+	private String rg;
+	private String dataDeNascimento;
+	private String raca;
+	private String nacionalidade; 
+	private String telefone;
+	private String celular;
+	private String email;
+	private String login;
+	private String senha;
+	
+	@ManyToOne
+	private Endereco endereco;
 
 	public String getNome() {
 		return nome;
@@ -96,14 +112,13 @@ public class Usuario {
 	public String getNacionalidade() {
 		return nacionalidade;
 	}
-	
-	public Usuario() {}
 
-	public Usuario(String nome, String sobrenome, String cpf, String rg,
-			String dataDeNascimento, String raca, String nacionalidade,
-			String telefone, String celular, String email, String login,
-			String senha, String pais, String uf, String cidade,
-			String municipio, String bairro, String logradouro,
+	public Usuario() {
+	}
+
+	public Usuario(String nome, String sobrenome, String cpf, String rg, String dataDeNascimento, String raca,
+			String nacionalidade, String telefone, String celular, String email, String login, String senha,
+			String pais, String uf, String cidade, String municipio, String bairro, String logradouro,
 			String complemento, int numero) {
 		super();
 		this.nome = nome;
@@ -118,8 +133,7 @@ public class Usuario {
 		this.email = email;
 		this.login = login;
 		this.senha = senha;
-		this.endereco = new Endereco(pais, uf, cidade, municipio, bairro,
-				logradouro, complemento, numero);
+		this.endereco = new Endereco(pais, uf, cidade, municipio, bairro, logradouro, complemento, numero);
 
 	}
 
