@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Cadastroo de Aluno</title>
+    <title>Cadastro de Aluno</title>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
