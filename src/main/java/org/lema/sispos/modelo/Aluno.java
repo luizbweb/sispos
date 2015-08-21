@@ -144,17 +144,13 @@ public class Aluno{
 		this.endereco = endereco;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
 
 	public void setMatricula(Matricula matricula) {
 		this.matricula = matricula;
 	}
 
-	public Long getId() {
-		return id;
-	}
+	
 	
 	public double getCr() {
 		return cr;
