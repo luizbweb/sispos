@@ -9,7 +9,10 @@ import javax.persistence.Id;
 public class Disciplina {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	String nome, curso;
+	private Integer id;
+	
+	private String nome;
+	private String curso;
 	//Curso curso;
 	int cargaHoraria;
 	
