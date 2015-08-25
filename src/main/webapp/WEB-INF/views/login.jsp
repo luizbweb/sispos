@@ -25,7 +25,7 @@
 		</header>
 
 		<section>
-		<form id="login" action="logar">
+		<form id="login" action="principal" method="post">
 			<!-- Formulário de login no site da UEZO -->
 			<div id="titlogin">Acesso Restrito</div>
 			<label value="Login">Login:</label> <input class="campo" type="text" /><br>

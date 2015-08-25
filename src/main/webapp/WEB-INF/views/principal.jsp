@@ -28,7 +28,7 @@
 				<div class="bloco">
 					<h3 class="menutitulo">Alunos</h3>
 					<ul class="menulist">
-						<li> <a class="menulink" href="form_aluno.html"> Novo Aluno </a></li>
+						<li> <a class="menulink" href="aluno/form"> Novo Aluno </a></li>
 						<li> <a class="menulink" href="consulta_aluno.html"> Buscar Alunos </a></li>
 						<li> <a class="menulink" href="form_aluno.html"> Atualizar Cadastro </a></li>
 						<li> <a class="menulink" href="lista_alunos.html"> Relatório de Alunos </a></li>
@@ -38,7 +38,7 @@
 				<div class="bloco">
 					<h3 class="menutitulo">Disciplinas</h3>
 					<ul class="menulist">
-						<li> <a class="menulink" href="form_disciplina.html"> Nova Disciplina </a></li>
+						<li> <a class="menulink" href="disciplina/form"> Nova Disciplina </a></li>
 						<li> <a class="menulink" href="consulta_disciplina.html"> Buscar Disciplina </a></li>
 						<li> <a class="menulink" href="form_disciplina.html"> Atualizar Disciplina </a></li>
 						<li> <a class="menulink" href="lista_disciplinas.html"> Relatório de Disciplinas </a></li>
@@ -51,7 +51,7 @@
 				<div class="bloco">
 					<h3 class="menutitulo">Professores</h3>
 					<ul class="menulist">
-						<li> <a class="menulink" href="form_prof.html"> Novo Professor </a></li>
+						<li> <a class="menulink" href="professor/form"> Novo Professor </a></li>
 						<li> <a class="menulink" href="consulta_prof.html"> Buscar Professores </a></li>
 						<li> <a class="menulink" href="form_prof.html"> Atualizar Professor </a></li>
 						<li> <a class="menulink" href="lista_profs.html"> Relatório de Professores </a></li>
@@ -61,7 +61,7 @@
 				<div class="bloco">
 					<h3 class="menutitulo">Cursos</h3>
 					<ul class="menulist">
-						<li> <a class="menulink" href="form_curso.html"> Novo Curso </a></li>
+						<li> <a class="menulink" href="curso/form.html"> Novo Curso </a></li>
 						<li> <a class="menulink" href="consulta_curso.html"> Buscar Cursos </a></li>
 						<li> <a class="menulink" href="form_curso.html"> Atualizar Cursos </a></li>
 						<li> <a class="menulink" href="lista_cursos.html"> Relatório de Cursos </a></li>

@@ -12,8 +12,8 @@ public class HomeController {
 		return "login";
 	}
 	
-	@RequestMapping("/logar")
-	public String entrar(){
+	@RequestMapping("/principal")
+	public String logar(){
 		return "principal";
 	}
 }
