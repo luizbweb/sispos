@@ -31,7 +31,7 @@
             <fieldset id="borda">
                 <h3 class="formtitulo">Cadastro de Professores</h3>
                 <div class="cadastro_coluna">
-                    <label value="Matricula">Matricula:</label>
+                    <label value="Matricula">Matrícula:</label>
                     <input name="matricula" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
@@ -39,7 +39,7 @@
                     <input name="nome_professor" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
-                    <label value="Endereco">EndereÃ§o:</label>
+                    <label value="Endereco">Endereço:</label>
                     <input name="endereco" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
@@ -99,7 +99,7 @@
                     <input nome="uf" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
-                    <label value="Orgao">Ã“rgÃ£o:</label>
+                    <label value="Orgao">Órgão:</label>
                     <input name="orgao" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
@@ -111,7 +111,7 @@
                     <input name="cpf" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
-                    <label value="Titulacao">TitulaÃ§Ã£o:</label>
+                    <label value="Titulacao">Titulação:</label>
                     <input name="titulacao" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
@@ -123,7 +123,7 @@
     </div>
     </section>
   <footer>
-	SISPOS - Sistema de PÃ³s-GraduaÃ§Ã£o da UEZO | Open Source System
+	SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
   </footer>
   </div>
   </body>

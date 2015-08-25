@@ -35,11 +35,11 @@
                         <input name="disciplina" class="campo" type="text" />
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Carga_horaria">Carga Hor√°ria:</label>
+                        <label value="Carga_horaria">Carga Hor·ria:</label>
                         <input name="carga" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Credito">Cr√©dito:</label>
+                        <label value="Credito">CrÈdito:</label>
                         <input name="credito" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -52,11 +52,11 @@
                         </select>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Horario_inicio">Hor√°rio de In√≠cio:</label>
+                        <label value="Horario_inicio">Hor·rio de InÌcio:</label>
                         <input name="horario_inicio" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Horario_termino">Hor√°rio de T√©rmino:</label>
+                        <label value="Horario_termino">Hor·rio de TÈrmino:</label>
                         <input name="horario_termino" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -69,7 +69,7 @@
                         </select>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Periodo">Per√≠odo:</label>
+                        <label value="Periodo">PerÌodo:</label>
                         <input name="periodo" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -81,7 +81,7 @@
         </div>
     </section>
   <footer>
-	SISPOS - Sistema de P√≥s-Gradua√ß√£o da UEZO | Open Source System
+	SISPOS - Sistema de PÛs-GraduaÁ„o da UEZO | Open Source System
   </footer>
   </div>
   </body>

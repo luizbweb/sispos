@@ -125,7 +125,7 @@
                             <input class="campo" type="text" name="dia" size="2" maxlength="2" placeholder="dd">
                         </div>
                         <div class="cadastro_coluna">
-                            <label>Termino: </label>
+                            <label>Término: </label>
                             <input class="campo" type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
                             <input class="campo" type="text" name="mes" size="2" maxlength="2" placeholder="mm">
                             <input class="campo" type="text" name="dia" size="2" maxlength="2" placeholder="dd">
