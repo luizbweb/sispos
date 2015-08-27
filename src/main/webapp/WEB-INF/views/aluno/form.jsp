@@ -41,12 +41,7 @@
                             <label>Sobrenome:</label>
                             <input class="campo" type="text" name="sobrenome" maxlength="15">
                         </div>
-                        <div class="cadastro_coluna">
-                            <label>Nascimento: </label>
-                            <input class="campo" type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
-                            <input class="campo" type="text" name="mes" size="2" maxlength="2" placeholder="mm">
-                            <input class="campo" type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
-                        </div>
+                        <!-- DATA DE NASCIMENTO AQUI  -->
                         <div class="cadastro_coluna">
                             <label>RG: </label>
                             <input class="campo" type="text" name="rg" maxlength="13">
