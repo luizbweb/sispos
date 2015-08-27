@@ -24,6 +24,7 @@ public class Professor {
 	String dataDeNascimento;
 	String raca;
 	String nacionalidade;
+	String naturalidade;
 	String estadoCivil;
 	String telefone;
 	String celular;
@@ -89,6 +90,14 @@ public class Professor {
 		this.nacionalidade = nacionalidade;
 	}
 	
+
+	public String getNaturalidade() {
+		return naturalidade;
+	}
+
+	public void setNaturalidade(String naturalidade) {
+		this.naturalidade = naturalidade;
+	}
 
 	public String getEstadoCivil() {
 		return estadoCivil;
