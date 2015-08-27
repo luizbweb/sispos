@@ -63,6 +63,26 @@
                             <label>CPF:</label>
                             <input class="campo" type="text" name="cpf"  maxlength="11">
                         </div>
+                        <div class="cadastro_coluna">
+                            <label>Raça:</label>
+                            <input class="campo" type="text" name="raca"  maxlength="20">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Nacionalidade:</label>
+                            <input class="campo" type="text" name="nacionalidade"  maxlength="20">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Telefone:</label>
+                            <input class="campo" type="text" name="telefone"  maxlength="20">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Celular:</label>
+                            <input class="campo" type="text" name="celular"  maxlength="20">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Email:</label>
+                            <input class="campo" type="text" name="email"  maxlength="30">
+                        </div>
                         <!-- Endereço pessoal -->
                         <div class="cadastro_coluna">
                             <label>Rua:</label>
