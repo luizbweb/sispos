@@ -37,11 +37,11 @@
                 </div> -->
                 <div class="cadastro_coluna">
                     <label value="Nome">Nome:</label>
-                    <input name="nome_professor" class="campo" type="text"/>
+                    <input name="nome" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Nome">Sobrenome:</label>
-                    <input name="sobrenome_professor" class="campo" type="text"/>
+                    <input name="sobrenome" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Endereco">Endereço:</label>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Estado_civil">Estado Civil:</label>
-                    <input nome="estado_civil" class="campo" type="text"/>
+                    <input nome="estadoCivil" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="ddd">DDD:</label>
