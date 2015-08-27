@@ -84,21 +84,15 @@
                             <input class="campo" type="text" name="email"  maxlength="30">
                         </div>
                         <!-- Endereço pessoal -->
+                       
                         <div class="cadastro_coluna">
-                            <label>Rua:</label>
-                            <input class="campo" type="text" name="rua"  maxlength="60">
+                            <label>País: </label>
+                            <input class="campo" type="text" name="endereco.pais"  maxlength="50">
                         </div>
-                        <div class="cadastro_coluna">
-                            <label>N°:</label>
-                            <input class="campo" type="text" name="numero"  maxlength="4">
-                        </div>
-                        <div class="cadastro_coluna">
-                            <label>Bairro: </label>
-                            <input class="campo" type="text" name="bairro"  maxlength="50">
-                        </div>
+                        
                         <div class="cadastro_coluna">
                             <label>Estado:</label>
-                            <select class="campo" name="estado"> 
+                            <select class="campo" name="endereco.estado"> 
                                 <option value="ac">Acre</option> 
                                 <option value="al">Alagoas</option> 
                                 <option value="am">Amazonas</option> 
@@ -130,12 +124,29 @@
                         </div>
                         <div class="cadastro_coluna">
                             <label>Cidade: </label>
-                            <input class="campo" type="text" name="cidade">
-                                                </div>
+                            <input class="campo" type="text" name="endereco.cidade">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Bairro: </label>
+                            <input class="campo" type="text" name="endereco.bairro"  maxlength="50">
+                        </div>
+                         <div class="cadastro_coluna">
+                            <label>Rua/Logradouro:</label>
+                            <input class="campo" type="text" name="endereco.logradouro"  maxlength="60">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>N°:</label>
+                            <input class="campo" type="text" name="endereco.numero"  maxlength="4">
+                        </div>
+                        <div class="cadastro_coluna">
+                            <label>Complemento:</label>
+                            <input class="campo" type="text" name="endereco.complemento"  maxlength="4">
+                        </div>
+                        <!--  VERIFICAR USO DO CP
                         <div class="cadastro_coluna">
                             <label>CEP: </label>
                             <input class="campo" type="text" name="cep"  maxlength="8">
-                        </div>
+                        </div> -->
                         <div class="cadastro_coluna">
                             <label>Instituição: </label>
                             <input class="campo" type="text" name="instituição"  maxlength="27" >
