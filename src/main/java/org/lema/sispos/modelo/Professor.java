@@ -26,6 +26,7 @@ public class Professor {
 	String nacionalidade;
 	String naturalidade;
 	String estadoCivil;
+	String titulacao;
 	String telefone;
 	String celular;
 	String email;
@@ -105,6 +106,15 @@ public class Professor {
 
 	public void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
+	}
+	
+	
+	public String getTitulacao() {
+		return titulacao;
+	}
+
+	public void setTitulacao(String titulacao) {
+		this.titulacao = titulacao;
 	}
 
 	public String getNome() {
