@@ -15,8 +15,22 @@ public class Professor {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	String nome, sobrenome, cpf, rg, dataDeNascimento, raca, nacionalidade,
-			telefone, celular, email, login, foto, senha;
+	String nome; 
+	String sobrenome; 
+	String cpf;
+	String rg;
+	String orgao;
+	String dataExpedicao;
+	String dataDeNascimento;
+	String raca;
+	String nacionalidade;
+	String estadoCivil;
+	String telefone;
+	String celular;
+	String email;
+	String login;
+	String foto;
+	String senha;
 	
 
 	@JoinColumn(unique=true)
@@ -45,6 +59,23 @@ public class Professor {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
+	
+
+	public String getOrgao() {
+		return orgao;
+	}
+
+	public void setOrgao(String orgao) {
+		this.orgao = orgao;
+	}
+
+	public String getDataExpedicao() {
+		return dataExpedicao;
+	}
+
+	public void setDataExpedicao(String dataExpedicao) {
+		this.dataExpedicao = dataExpedicao;
+	}
 
 	public void setDataDeNascimento(String dataDeNascimento) {
 		this.dataDeNascimento = dataDeNascimento;
@@ -56,6 +87,15 @@ public class Professor {
 
 	public void setNacionalidade(String nacionalidade) {
 		this.nacionalidade = nacionalidade;
+	}
+	
+
+	public String getEstadoCivil() {
+		return estadoCivil;
+	}
+
+	public void setEstadoCivil(String estadoCivil) {
+		this.estadoCivil = estadoCivil;
 	}
 
 	public String getNome() {
