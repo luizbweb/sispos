@@ -12,15 +12,19 @@ public class Endereco {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	private String pais, uf, cidade, municipio, bairro, logradouro, complemento;
+	private String pais; 
+	private String estado; 
+	private String cidade; 
+	private String bairro; 
+	private String logradouro;
+	private String complemento;
 	int numero;
 
-	public Endereco(String pais, String uf, String cidade, String municipio,
+	public Endereco(String pais, String estado, String cidade,
 			String bairro, String logradouro, String complemento, int numero) {
 		this.pais = pais;
-		this.uf = uf;
+		this.estado = estado;
 		this.cidade = cidade;
-		this.municipio = municipio;
 		this.bairro = bairro;
 		this.logradouro = logradouro;
 		this.complemento = complemento;
@@ -37,12 +41,12 @@ public class Endereco {
 		this.pais = pais;
 	}
 
-	public String getUf() {
-		return uf;
+	public String getEstado() {
+		return estado;
 	}
 
-	public void setUf(String uf) {
-		this.uf = uf;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 
 	public String getCidade() {
@@ -53,13 +57,6 @@ public class Endereco {
 		this.cidade = cidade;
 	}
 
-	public String getMunicipio() {
-		return municipio;
-	}
-
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
-	}
 
 	public String getBairro() {
 		return bairro;
