@@ -10,6 +10,14 @@
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 	<link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
 </head>
 <body>
 <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
@@ -41,7 +49,12 @@
                             <label>Sobrenome:</label>
                             <input class="campo" type="text" name="sobrenome" maxlength="15">
                         </div>
-                        <!-- DATA DE NASCIMENTO AQUI  -->
+                        <!-- DATA DE NASCIMENTO AQUI  
+                        <p>Date: <input type="text" id="datepicker"></p> -->
+                        <div class="cadastro_coluna">
+                            <label>Data Nasci: </label>
+                            <input class="campo" type="text" id="datepicker" name="dataNascimento">
+                        </div>
                         <div class="cadastro_coluna">
                             <label>RG: </label>
                             <input class="campo" type="text" name="rg" maxlength="13">
