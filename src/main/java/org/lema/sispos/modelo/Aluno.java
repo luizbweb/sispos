@@ -8,6 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Aluno{
 
@@ -28,6 +30,7 @@ public class Aluno{
 	private String rg;
 	private String orgao;
 	private String expedicao;
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private String dataDeNascimento;
 	private String raca;
 	private String nacionalidade; 
