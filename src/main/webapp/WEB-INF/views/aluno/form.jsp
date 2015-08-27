@@ -27,10 +27,12 @@
                 <!--Dados Pessoais-->
                 <fieldset id="borda">
                         <h3 class="formtitulo">Cadastro de Aluno</h3>
+                        <!--  RETIRADA DA MATRICULA
                         <div class="cadastro_coluna">
-                            <label>Matrícula: </label>
+                             <label>Matrícula: </label>
                             <input class="campo" type="text" name="matricula" maxlength="27">
-                        </div>
+                       
+                        </div> -->
                         <div class="cadastro_coluna">
                             <label>Nome:</label>
                             <input class="campo" type="text" name="nome" maxlength="15">
