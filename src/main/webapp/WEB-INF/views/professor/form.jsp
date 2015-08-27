@@ -30,13 +30,18 @@
 		<form id="cadastro" method="post" action="professor">
             <fieldset id="borda">
                 <h3 class="formtitulo">Cadastro de Professores</h3>
+                <!-- RETIRADA DA MATRICULA 
                 <div class="cadastro_coluna">
                     <label value="Matricula">Matrícula:</label>
                     <input name="matricula" class="campo" type="text"/>
-                </div>
+                </div> -->
                 <div class="cadastro_coluna">
                     <label value="Nome">Nome:</label>
                     <input name="nome_professor" class="campo" type="text"/>
+                </div>
+                <div class="cadastro_coluna">
+                    <label value="Nome">Sobrenome:</label>
+                    <input name="sobrenome_professor" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Endereco">Endereço:</label>
