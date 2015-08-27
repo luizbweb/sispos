@@ -53,11 +53,11 @@
                         </div>
                         <div class="cadastro_coluna">
                             <label>Orgão: </label>
-                            <input class="campo" type="text" name="rg"  maxlength="13">
+                            <input class="campo" type="text" name="orgao"  maxlength="13">
                         </div>
                         <div class="cadastro_coluna">
                             <label>Expedição: </label>
-                            <input class="campo" type="text" name="rg" smaxlength="13">
+                            <input class="campo" type="text" name="expedicao" smaxlength="13">
                         </div>
                         <div class="cadastro_coluna">
                             <label>CPF:</label>

@@ -17,7 +17,7 @@ public class Professor {
 	private Long id;
 	String nome; 
 	String sobrenome; 
-	String cpf;
+	String cpf; 
 	String rg;
 	String orgao;
 	String dataExpedicao;
