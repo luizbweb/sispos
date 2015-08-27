@@ -96,6 +96,10 @@
                     <input nome="nacionalidade" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
+                    <label value="Nome">Raça:</label>
+                    <input name="raca" class="campo" type="text"/>
+                </div>
+                <div class="cadastro_coluna">
                     <label value="Rg">RG:</label>
                     <input name="rg" class="campo" type="text"/>
                 </div>
