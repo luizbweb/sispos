@@ -26,6 +26,8 @@ public class Aluno{
 	private String sobrenome; 
 	private String cpf;
 	private String rg;
+	private String orgao;
+	private String expedicao;
 	private String dataDeNascimento;
 	private String raca;
 	private String nacionalidade; 
@@ -66,6 +68,23 @@ public class Aluno{
 
 	public String getRg() {
 		return rg;
+	}
+	
+
+	public String getOrgao() {
+		return orgao;
+	}
+
+	public void setOrgao(String orgao) {
+		this.orgao = orgao;
+	}
+
+	public String getExpedicao() {
+		return expedicao;
+	}
+
+	public void setExpedicao(String expedicao) {
+		this.expedicao = expedicao;
 	}
 
 	public void setRg(String rg) {
