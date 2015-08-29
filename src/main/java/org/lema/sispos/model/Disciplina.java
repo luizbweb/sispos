@@ -1,4 +1,4 @@
-package org.lema.sispos.modelo;
+package org.lema.sispos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

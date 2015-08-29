@@ -1,14 +1,25 @@
-package org.lema.sispos.modelo;
+package org.lema.sispos.model;
 
+import java.util.Arrays;
+import java.util.Collection;
+
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.lema.sispos.security.role.Papel;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 @Entity
-public class Usuario {
+public class Usuario implements UserDetails {
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -26,9 +37,20 @@ public class Usuario {
 	private String login;
 	private String senha;
 	
+	@Enumerated(EnumType.STRING)
+	private Papel papel;
+	
 	@ManyToOne
 	private Endereco endereco;
-
+	
+	public void setPapel(Papel papel) {
+		this.papel = papel;
+	}
+	
+	public Papel getPapel() {
+		return papel;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -69,16 +91,8 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getLogin() {
-		return login;
-	}
-
 	public void setLogin(String login) {
 		this.login = login;
-	}
-
-	public String getSenha() {
-		return senha;
 	}
 
 	public void setSenha(String senha) {
@@ -113,31 +127,46 @@ public class Usuario {
 		return nacionalidade;
 	}
 
-	public Usuario() {
-	}
-
-	public Usuario(String nome, String sobrenome, String cpf, String rg, String dataDeNascimento, String raca,
-			String nacionalidade, String telefone, String celular, String email, String login, String senha,
-			String pais, String uf, String cidade, String municipio, String bairro, String logradouro,
-			String complemento, int numero) {
-		super();
-		this.nome = nome;
-		this.sobrenome = sobrenome;
-		this.cpf = cpf;
-		this.rg = rg;
-		this.dataDeNascimento = dataDeNascimento;
-		this.raca = raca;
-		this.nacionalidade = nacionalidade;
-		this.telefone = telefone;
-		this.celular = celular;
-		this.email = email;
-		this.login = login;
-		this.senha = senha;
-		this.endereco = new Endereco(pais, uf, cidade, municipio, bairro, logradouro, complemento, numero);
-
-	}
-
 	public String getNomeCompleto() {
 		return nome + " " + sobrenome;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return Arrays.asList(papel);
+	}
+
+	@Override
+	public String getPassword() {
+		return senha;
+	}
+
+	@Override
+	public String getUsername() {
+		return login;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 }

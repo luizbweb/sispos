@@ -1,4 +1,4 @@
-package org.lema.sispos;
+package org.lema.sispos.configuration;
 
 import java.beans.PropertyVetoException;
 import java.util.Properties;
@@ -43,7 +43,7 @@ public class JPAConfigurador {
 		}
 
 		ds.setUser("root");
-		ds.setPassword("senha");
+		ds.setPassword("");
 		ds.setJdbcUrl("jdbc:mysql://localhost/sappg");
 		return ds;
 	}

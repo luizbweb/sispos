@@ -1,4 +1,4 @@
-package org.lema.sispos;
+package org.lema.sispos.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

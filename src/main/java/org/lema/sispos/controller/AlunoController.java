@@ -1,7 +1,7 @@
 package org.lema.sispos.controller;
 
 import org.lema.sispos.dao.AlunoDao;
-import org.lema.sispos.modelo.Aluno;
+import org.lema.sispos.model.Aluno;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

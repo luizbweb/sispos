@@ -5,8 +5,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.lema.sispos.modelo.Aluno;
-import org.lema.sispos.modelo.Curso;
+import org.lema.sispos.model.Aluno;
+import org.lema.sispos.model.Curso;
 import org.springframework.stereotype.Repository;
 
 @Repository

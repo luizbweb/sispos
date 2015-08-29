@@ -1,4 +1,4 @@
-package org.lema.sispos.modelo;
+package org.lema.sispos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +18,7 @@ public class Endereco {
 	private String bairro; 
 	private String logradouro;
 	private String complemento;
-	int numero;
+	private int numero;
 
 	public Endereco(String pais, String estado, String cidade,
 			String bairro, String logradouro, String complemento, int numero) {

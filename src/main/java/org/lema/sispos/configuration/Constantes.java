@@ -1,4 +1,4 @@
-package org.lema.sispos;
+package org.lema.sispos.configuration;
 
 public class Constantes {
 	

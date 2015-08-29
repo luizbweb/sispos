@@ -1,17 +1,18 @@
-package org.lema.sispos;
+package org.lema.sispos.configuration;
 
+import org.lema.sispos.security.configuration.SpringSecurityConfigurator;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class Initializador extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return null;
+		return new Class[] { JPAConfigurador.class, Configurador.class, SpringSecurityConfigurator.class  };
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] { Configurador.class, JPAConfigurador.class };
+		return new Class[] { };
 	}
 
 	@Override

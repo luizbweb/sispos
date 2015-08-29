@@ -5,6 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 import org.lema.sispos.exception.DomainException;
+import org.lema.sispos.model.AreaDoConhecimento;
+import org.lema.sispos.model.Curso;
+import org.lema.sispos.model.Matricula;
 
 public class MatriculaTest {
 	
