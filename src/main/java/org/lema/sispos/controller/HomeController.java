@@ -12,4 +12,8 @@ public class HomeController {
 		return "login";
 	}
 	
+	@RequestMapping("/principal")
+	public String logar(){
+		return "principal";
+	}
 }

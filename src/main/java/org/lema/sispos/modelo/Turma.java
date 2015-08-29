@@ -8,9 +8,6 @@ public class Turma {
 	Calendar dataIni, dataFim;
 	String sala, lab; 
 	
-	public Turma() {
-		super();
-	}
 	public Turma(Disciplina disciplina, int periodo, int numeroAlunos, int maxAlunos, int numeroAulas, Calendar dataIni,
 			Calendar dataFim, String sala, String lab) {
 		super();

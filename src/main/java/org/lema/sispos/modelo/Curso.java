@@ -16,6 +16,7 @@ public class Curso {
 	private String identificacao;
 	private int duracao;
 	private AreaDoConhecimento area;
+	private String tipo;
 	
 	private Curso() { 
 		
@@ -30,6 +31,20 @@ public class Curso {
 		this.area = area;
 	}
 	
+	
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setArea(AreaDoConhecimento area) {
+		this.area = area;
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -25,14 +25,14 @@
 		</header>
 
 		<section>
-		<form id="login">
+		<form id="login" action="principal" method="post">
 			<!-- Formulário de login no site da UEZO -->
 			<div id="titlogin">Acesso Restrito</div>
 			<label value="Login">Login:</label> <input class="campo" type="text" /><br>
 
 			<label value="Senha">Senha:</label> <input class="campo"
-				type="password" /> <br> <input id="btn_entrar" type="button"
-				value="Entrar" /> <a href="#" id="destaque"> Recuperar Senha. </a>
+				type="password" /> <br> <input id="btn_entrar" type="submit"
+				value="Entrar" name="entrar" /> <a href="#" id="destaque"> Recuperar Senha. </a>
 			<br>
 		</form>
 		</section>
