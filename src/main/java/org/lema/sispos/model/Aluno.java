@@ -1,5 +1,8 @@
 package org.lema.sispos.model;
 
+import java.util.Calendar;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +14,7 @@ import javax.persistence.OneToOne;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-public class Aluno{
+public class Aluno {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,7 +34,7 @@ public class Aluno{
 	private String orgao;
 	private String expedicao;
 	@DateTimeFormat(pattern="dd/MM/yyyy")
-	private String dataDeNascimento;
+	private Calendar dataDeNascimento;
 	private String raca;
 	private String nacionalidade; 
 	private String telefone;
@@ -40,10 +43,8 @@ public class Aluno{
 	private String login;
 	private String senha;
 	
-	@ManyToOne
-	private Endereco endereco;
-
-	
+	@ManyToOne(cascade=CascadeType.PERSIST)
+	private Endereco endereco = new Endereco();
 	
 	public String getNome() {
 		return nome;
@@ -94,11 +95,11 @@ public class Aluno{
 		this.rg = rg;
 	}
 
-	public String getDataDeNascimento() {
+	public Calendar getDataDeNascimento() {
 		return dataDeNascimento;
 	}
 
-	public void setDataDeNascimento(String dataDeNascimento) {
+	public void setDataDeNascimento(Calendar dataDeNascimento) {
 		this.dataDeNascimento = dataDeNascimento;
 	}
 
@@ -166,14 +167,10 @@ public class Aluno{
 		this.endereco = endereco;
 	}
 
-	
-
 	public void setMatricula(Matricula matricula) {
 		this.matricula = matricula;
 	}
 
-	
-	
 	public double getCr() {
 		return cr;
 	}

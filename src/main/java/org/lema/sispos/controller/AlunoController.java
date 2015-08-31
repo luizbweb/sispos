@@ -19,11 +19,11 @@ public class AlunoController {
 		return "aluno/form";
 	}
 	
-	@RequestMapping(method=RequestMethod.POST)
-	public String save(Aluno aluno) { 
-		alunoDao.salvar(aluno);
+	@RequestMapping(method=RequestMethod.POST, name="cadastrarAluno")
+	public String save(Aluno aluno) {
+		//alunoDao.salvar(aluno);
 		
-		return form();
+		return "redirect:/";
 	}
 
 }

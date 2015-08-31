@@ -10,7 +10,7 @@ public class Endereco {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	
 	private String pais; 
 	private String estado; 
@@ -18,21 +18,8 @@ public class Endereco {
 	private String bairro; 
 	private String logradouro;
 	private String complemento;
-	private int numero;
+	private Integer numero;
 
-	public Endereco(String pais, String estado, String cidade,
-			String bairro, String logradouro, String complemento, int numero) {
-		this.pais = pais;
-		this.estado = estado;
-		this.cidade = cidade;
-		this.bairro = bairro;
-		this.logradouro = logradouro;
-		this.complemento = complemento;
-		this.numero = numero;
-	}
-	
-	public Endereco() {}
-	
 	public String getPais() {
 		return pais;
 	}
