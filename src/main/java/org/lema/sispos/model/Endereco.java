@@ -20,6 +20,10 @@ public class Endereco {
 	private String complemento;
 	private Integer numero;
 
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+
 	public String getPais() {
 		return pais;
 	}

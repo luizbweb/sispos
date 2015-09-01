@@ -1,13 +1,14 @@
 package org.lema.sispos.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+
+
 
 @Entity
 public class Professor {
@@ -35,9 +36,14 @@ public class Professor {
 	String senha;
 	
 
+	
 	@JoinColumn(unique=true)
-	@ManyToOne
+	@ManyToOne(cascade=CascadeType.PERSIST)
 	Endereco endereco;
+	
+	public Professor(){
+		
+	}
 	
 	public Professor(String nome, String sobrenome, String cpf, String rg, String dataDeNascimento, String raca,
 			String nacionalidade, String telefone, String celular, String email, String login, String senha,

@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -24,7 +26,7 @@
 		</section>
 		<section>
 			<div  id="cad_form">
-                <form id="cadastro" action="curso">
+                <form:form id="cadastro" action="${spring:mvcUrl('cadastrarCurso').build()}" method="post">
                     <fieldset id="borda">
                         <div>
                             <h3 class="formtitulo">Cadastro de Curso</h3>
@@ -45,21 +47,21 @@
                             <label>Duração:</label>
                             <input class="campo" name="duracao" type="text">
                         </div>
-                        <div class="cadastro_coluna">
-                            <label>Área do Conhecimento:</label>			
-                            <select class="campo" name="area">
-                                <option >Escolha a Área</option>
-                                <option value="Exatas">Ciências Exatas</option>
-                                <option value="Biologicas">Ciências Biologicas</option>
-                                <option value="Saúde">Ciências Saúde</option>
-                                <option value="Agrárias">Ciências Agrárias</option>
-                                <option value="Sociais Aplicadas">Ciências Sociais Aplicadas</option>
-                                <option value="Humanas">Ciências Humanas</option>
-                                <option value="Engenharias">Engenharias</option>
-                                <option value="Linguísticas/Letras e Artes">Linguísticas, Letras e Artes</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
+<!--                       <div class="cadastro_coluna"> -->
+<!--                             <label>Área do Conhecimento:</label>			 -->
+<!--                             <select class="campo" name="area"> -->
+<!--                                 <option >Escolha a Área</option> -->
+<!--                                 <option value="Exatas">Ciências Exatas</option> -->
+<!--                                 <option value="Biologicas">Ciências Biologicas</option> -->
+<!--                                 <option value="Saúde">Ciências Saúde</option> -->
+<!--                                 <option value="Agrárias">Ciências Agrárias</option> -->
+<!--                                 <option value="Sociais Aplicadas">Ciências Sociais Aplicadas</option> -->
+<!--                                 <option value="Humanas">Ciências Humanas</option> -->
+<!--                                 <option value="Engenharias">Engenharias</option> -->
+<!--                                 <option value="Linguísticas/Letras e Artes">Linguísticas, Letras e Artes</option> -->
+<!--                                 <option value="outros">Outros</option> -->
+<!--                             </select> -->
+<!--                         </div> -->
                         <div class="cadastro_coluna">
                             <label>Tipo:</label>
                             <select class="campo" name="tipoCurso">
@@ -74,7 +76,7 @@
                             <input id="btn_limpar" type="reset" value="Limpar">
                         </div>
                     </fieldset>
-                </form>
+                </form:form>
 			</div>
 		</section>
 		<footer>
