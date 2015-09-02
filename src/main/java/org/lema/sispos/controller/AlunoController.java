@@ -1,5 +1,7 @@
 package org.lema.sispos.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.lema.sispos.dao.AlunoDao;
@@ -10,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -33,6 +36,16 @@ public class AlunoController {
 		
 		alunoDao.salvar(aluno);
 		return "redirect:/";
+	}
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public ModelAndView list() { 
+		List<Aluno> alunos = alunoDao.lista();
+		
+		ModelAndView modelAndView = new ModelAndView("aluno/lista");
+		modelAndView.addObject("alunos", alunos);
+		
+		return modelAndView;
 	}
 
 }
