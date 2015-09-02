@@ -10,7 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+import javax.validation.Valid;
 
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -20,31 +22,46 @@ public class Aluno {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private double cr;
+	
 	private String status;
 	private String lattes;
 
 	@JoinColumn(unique=true)
 	@OneToOne
 	private Matricula matricula;
-	
+	@NotBlank
 	private String nome;
-	private String sobrenome; 
+	@NotBlank
+	private String sobrenome;
+	@NotBlank
 	private String cpf;
+	@NotBlank
 	private String rg;
+	@NotBlank
 	private String orgao;
+	@NotBlank
 	private String expedicao;
+	
 	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Calendar dataDeNascimento;
+	@NotBlank
 	private String raca;
-	private String nacionalidade; 
+	@NotBlank
+	private String nacionalidade;
+	@NotBlank
 	private String telefone;
+	@NotBlank
 	private String celular;
+	@NotBlank
 	private String email;
+	@NotBlank
 	private String login;
+	@NotBlank
 	private String senha;
 	
+	@Valid
 	@ManyToOne(cascade=CascadeType.PERSIST)
-	private Endereco endereco = new Endereco();
+	private Endereco endereco;
 	
 	public String getNome() {
 		return nome;

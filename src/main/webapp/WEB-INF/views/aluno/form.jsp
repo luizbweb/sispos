@@ -9,11 +9,11 @@
 <head>
     <title>Cadastro de Aluno</title>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-    <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value='/resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
- 	<link rel="stylesheet" href="<c:url value='../resources/demos/style.css'/>">
+ 	<link rel="stylesheet" href="<c:url value='/resources/demos/style.css'/>">
     <script>
   $(function() {
     $( "#datepicker" ).datepicker();
@@ -24,15 +24,16 @@
 <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
     <header id="menu">
 	   <div id="logo">
-		  <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
+		  <img src="<c:url value='/resources/imagens/logo_uezo_1.jpg'/>">
 	   </div>
     </header>
+    
 	<section id="submenu">
 		<!--Lista Referente ao Submenu-->
 	</section>
     <section>
-            <div id="cad_form">
-                <form:form id="cadastro" action="${spring:mvcUrl('cadastrarAluno').build()}" method="post">
+   			<div id="cad_form">
+                <form:form id="cadastro" commandName="aluno" action="${spring:mvcUrl('cadastrarAluno').build()}" method="post">
                 <!--Dados Pessoais-->
                 <fieldset id="borda">
                         <h3 class="formtitulo">Cadastro de Aluno</h3>
@@ -44,63 +45,77 @@
                         </div> -->
                         <div class="cadastro_coluna">
                             <label>Nome:</label>
-                            <input class="campo" type="text" name="nome" maxlength="15">
+                            <input class="campo" name="nome" value="${aluno.nome}" maxlength="15"/>
+                            <form:errors path="nome" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Sobrenome:</label>
                             <input class="campo" type="text" name="sobrenome" maxlength="15">
+                            <form:errors path="sobrenome" />
                         </div>
                         <!-- <!-- DATA DE NASCIMENTO AQUI  
                         <p>Date: <input type="text" id="datepicker"></p> -->
                          <div class="cadastro_coluna">
-                            <label>Data Nasci: </label>
+                            <label>Data Nascimento: </label>
                             <input class="campo" type="text" id="datepicker" name="dataDeNascimento">
+                            <form:errors path="dataDeNascimento" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>RG: </label>
                             <input class="campo" type="text" name="rg" maxlength="13">
+                            <form:errors path="rg" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Orgão: </label>
                             <input class="campo" type="text" name="orgao"  maxlength="13">
+                            <form:errors path="orgao" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Expedição: </label>
                             <input class="campo" type="text" name="expedicao" maxlength="13">
+                            <form:errors path="expedicao" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>CPF:</label>
                             <input class="campo" type="text" name="cpf"  maxlength="11">
+                            <form:errors path="cpf" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Raça:</label>
                             <input class="campo" type="text" name="raca"  maxlength="20">
+                            <form:errors path="raca" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Nacionalidade:</label>
                             <input class="campo" type="text" name="nacionalidade"  maxlength="20">
+                            <form:errors path="nacionalidade" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Telefone:</label>
                             <input class="campo" type="text" name="telefone"  maxlength="20">
+                            <form:errors path="telefone" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Celular:</label>
                             <input class="campo" type="text" name="celular"  maxlength="20">
+                            <form:errors path="celular" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Email:</label>
                             <input class="campo" type="text" name="email"  maxlength="30">
+                            <form:errors path="email" />
                         </div>
                         Endereço pessoal
                        
                         <div class="cadastro_coluna">
                             <label>País: </label>
-                            <input class="campo" type="text" name="endereco.pais"  maxlength="50">
+                            <input class="campo" type="text" value="${aluno.endereco.pais}" name="endereco.pais"  maxlength="50">
+                            <form:errors path="endereco.pais" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Estado:</label>
-                            <select class="campo" name="endereco.estado"> 
+                            <select class="campo" name="endereco.estado">
+                            	<option value="">Selecione</option>  
                                 <option value="ac">Acre</option> 
                                 <option value="al">Alagoas</option> 
                                 <option value="am">Amazonas</option> 
@@ -129,10 +144,12 @@
                                 <option value="sp">São Paulo</option> 
                                 <option value="to">Tocantins</option>
                             </select>
+                            <form:errors path="endereco.estado" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Cidade: </label>
                             <input class="campo" type="text" name="endereco.cidade">
+                            <form:errors path="endereco.cidade" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Bairro: </label>
