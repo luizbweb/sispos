@@ -2,67 +2,69 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-<html !DOCTYPE>
-<html lang="pt-br">
-	<head>
-		<title>Cadastro de Curso</title>
-		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-		<link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
-		<link type="image/x-icon" rel="shortcut icon" href="" />
-	</head>
-    
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<head>
+	<title>Cadastro de Curso</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+	<link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
+	<link type="image/x-icon" rel="shortcut icon" href="" />
+</head>
 	<body>
-	<div id="main"> <!-- Principal div que comporta o conte√∫do do site -->
+	<div id="main"> <!-- Principal div que comporta o conte˙do do site -->
 		<header id="menu">
-	   <div id="logo">
-		  <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
-	   </div>
+			<div id="logo">
+				<img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
+			</div>
 		</header>
 		<section id="submenu">
 			<!--Lista Referente ao Submenu-->
 		</section>
 		<section>
 			<div  id="cad_form">
-                <form id="cadastro" method="post" action="curso">
+                <form:form id="cadastro" action="${spring:mvcUrl('cadastrarCurso').build()}" method="post">
                     <fieldset id="borda">
                         <div>
                             <h3 class="formtitulo">Cadastro de Curso</h3>
                         </div>
                         <div class="cadastro_coluna">
                             <label>Nome:</label>
-                            <input name="curso" class="campo" type="text"> 
+                            <input class="campo" name="nome" type="text"> 
                         </div>
                         <div class="cadastro_coluna">
-                            <label>Coordena√ß√£o:</label>
-                            <input name="coordenacao" class="campo" type="text">
+                            <label>CoordenaÁ„o:</label>
+                            <input class="campo" name="coordenacao" type="text">
                         </div>
                         <div class="cadastro_coluna">
                             <label>ID:</label>
-                            <input name="id_curso" class="campo" type="text"> 
+                            <input class="campo" name="identificacao" type="text"> 
                         </div>
                         <div class="cadastro_coluna">
-                            <label>Dura√ß√£o:</label>
-                            <input name="duracao" class="campo" type="text">
+                            <label>DuraÁ„o:</label>
+                            <input class="campo" name="duracao" type="text">
                         </div>
-                        <div class="cadastro_coluna">
-                            <label>√Årea do Conhecimento:</label>			
-                            <select class="campo" name="area_do_conhecimento">
-                                <option >Escolha a √Årea</option>
-                                <option value="Exatas">Ci√™ncias Exatas</option>
-                                <option value="Biologicas">Ci√™ncias Biologicas</option>
-                                <option value="Sa√∫de">Ci√™ncias Sa√∫de</option>
-                                <option value="Agr√°rias">Ci√™ncias Agr√°rias</option>
-                                <option value="Sociais Aplicadas">Ci√™ncias Sociais Aplicadas</option>
-                                <option value="Humanas">Ci√™ncias Humanas</option>
-                                <option value="Engenharias">Engenharias</option>
-                                <option value="Lingu√≠sticas/Letras e Artes">Lingu√≠sticas, Letras e Artes</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
+<!--                       <div class="cadastro_coluna"> -->
+<!--                             <label>¡rea do Conhecimento:</label>			 -->
+<!--                             <select class="campo" name="area"> -->
+<!--                                 <option >Escolha a ¡rea</option> -->
+<!--                                 <option value="Exatas">CiÍncias Exatas</option> -->
+<!--                                 <option value="Biologicas">CiÍncias Biologicas</option> -->
+<!--                                 <option value="Sa˙de">CiÍncias Sa˙de</option> -->
+<!--                                 <option value="Agr·rias">CiÍncias Agr·rias</option> -->
+<!--                                 <option value="Sociais Aplicadas">CiÍncias Sociais Aplicadas</option> -->
+<!--                                 <option value="Humanas">CiÍncias Humanas</option> -->
+<!--                                 <option value="Engenharias">Engenharias</option> -->
+<!--                                 <option value="LinguÌsticas/Letras e Artes">LinguÌsticas, Letras e Artes</option> -->
+<!--                                 <option value="outros">Outros</option> -->
+<!--                             </select> -->
+<!--                         </div> -->
                         <div class="cadastro_coluna">
                             <label>Tipo:</label>
-                            <select class="campo" name="tipo_de_curso">
+                            <select class="campo" name="tipoCurso">
                                 <option> </option>
                                 <option value="Profissional">Profissional</option>
                                 <option value="Academico">Academico</option>
@@ -70,14 +72,15 @@
                         </div>
                         <div class="cadastro_coluna">
                             <br />
-                            <input class="botao-consulta" id="btn_cadastrar" type="submit" value="Salvar">
+                            <input id="btn_cadastrar" type="submit" value="Cadastrar">
+                            <input id="btn_limpar" type="reset" value="Limpar">
                         </div>
                     </fieldset>
-                </form>
+                </form:form>
 			</div>
 		</section>
 		<footer>
-			SISPOS - Sistema de P√≥s-Gradua√ß√£o da UEZO | Open Source System
+			SISPOS - Sistema de PÛs-GraduaÁ„o da UEZO | Open Source System
 		</footer>
 	</div>
 	</body>
