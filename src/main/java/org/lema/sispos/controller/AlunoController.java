@@ -27,6 +27,21 @@ public class AlunoController {
 		return "aluno/form";
 	}
 	
+	@RequestMapping(method=RequestMethod.GET)
+	public ModelAndView list() { 
+		List<Aluno> alunos = alunoDao.lista();
+		
+		ModelAndView modelAndView = new ModelAndView("aluno/lista");
+		modelAndView.addObject("alunos", alunos);
+		
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="/consulta", method=RequestMethod.GET)
+	public String consulta() { 
+		return "aluno/consulta";
+	}
+	
 	@Transactional
 	@RequestMapping(method=RequestMethod.POST, name="cadastrarAluno")
 	public String save(@Valid Aluno aluno, BindingResult result, RedirectAttributes attrs) {
@@ -38,14 +53,5 @@ public class AlunoController {
 		return "redirect:/";
 	}
 	
-	@RequestMapping(method=RequestMethod.GET)
-	public ModelAndView list() { 
-		List<Aluno> alunos = alunoDao.lista();
-		
-		ModelAndView modelAndView = new ModelAndView("aluno/lista");
-		modelAndView.addObject("alunos", alunos);
-		
-		return modelAndView;
-	}
 
 }

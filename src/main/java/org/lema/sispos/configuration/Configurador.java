@@ -20,18 +20,12 @@ public class Configurador extends WebMvcConfigurerAdapter {
 			DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
-	
-	@Override
-	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resource/**").addResourceLocations(
-				"/resource/");
-	}
 
 	@Bean
 	public MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource bundle = new ReloadableResourceBundleMessageSource();
 		bundle.setBasename("/WEB-INF/messages");
-		bundle.setDefaultEncoding("UTF-8");
+		bundle.setDefaultEncoding("ISO-8859-1");
 		bundle.setCacheSeconds(1);
 		return bundle;
 	}

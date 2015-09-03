@@ -16,7 +16,7 @@
  	<link rel="stylesheet" href="<c:url value='/resources/demos/style.css'/>">
     <script>
   $(function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
   });
   </script>
 </head>
@@ -56,7 +56,7 @@
                         <!-- <!-- DATA DE NASCIMENTO AQUI  
                         <p>Date: <input type="text" id="datepicker"></p> -->
                          <div class="cadastro_coluna">
-                            <label>Data Nascimento: </label>
+                            <label>Data de Nascimento: </label>
                             <input class="campo" type="text" id="datepicker" name="dataDeNascimento">
                             <form:errors path="dataDeNascimento" />
                         </div>

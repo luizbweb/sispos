@@ -31,9 +31,9 @@
 					<h3 class="menutitulo">Alunos</h3>
 					<ul class="menulist">
 						<li> <a class="menulink" href="aluno/form"> Novo Aluno </a></li>
-						<li> <a class="menulink" href="consulta_aluno.html"> Buscar Alunos </a></li>
+						<li> <a class="menulink" href="aluno/consulta"> Buscar Alunos </a></li>
 						<li> <a class="menulink" href="form_aluno.html"> Atualizar Cadastro </a></li>
-						<li> <a class="menulink" href="lista_alunos.html"> Relatório de Alunos </a></li>
+						<li> <a class="menulink" href="aluno"> Relatório de Alunos </a></li>
 					</ul>
 				</div>
 				

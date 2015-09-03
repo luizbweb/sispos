@@ -42,8 +42,8 @@
                 <li>
 					<div class="titulos">${aluno.nome}</div>
 					<div class="titulos">XXXXXXXXXX</div>
-					<div class="titulos">(021)1234-5678</div>
-					<div class="titulos">aluno@provedor.com.br</div>
+					<div class="titulos">${aluno.telefone}</div>
+					<div class="titulos">${aluno.email }</div>
 					<div class="titulos final">
                         <input class="editar" type="button" value="" />
 						<input class="historico" type="button" value="" />
