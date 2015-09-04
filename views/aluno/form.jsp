@@ -2,16 +2,6 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Cadastro de Aluno</title>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-      <link title="css" href="style.css'/>" type="text/css" rel="stylesheet" />
-
-<!-- <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" /> -->
-=======
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,14 +10,13 @@
     <title>Cadastro de Aluno</title>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <link title="css" href="<c:url value='/resources/css/style.css'/>" type="text/css" rel="stylesheet" />
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
     <link type="image/x-icon" rel="shortcut icon" href="" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
  	<link rel="stylesheet" href="<c:url value='/resources/demos/style.css'/>">
     <script>
   $(function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
   });
   </script>
 </head>
@@ -35,12 +24,7 @@
 <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
     <header id="menu">
 	   <div id="logo">
-<<<<<<< HEAD
-		  <img src="_imagens/logo_uezo_1.jpg'/>">
-           <!-- <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>"> -->
-=======
 		  <img src="<c:url value='/resources/imagens/logo_uezo_1.jpg'/>">
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
 	   </div>
     </header>
     
@@ -72,7 +56,7 @@
                         <!-- <!-- DATA DE NASCIMENTO AQUI  
                         <p>Date: <input type="text" id="datepicker"></p> -->
                          <div class="cadastro_coluna">
-                            <label>Data Nascimento: </label>
+                            <label>Data de Nascimento: </label>
                             <input class="campo" type="text" id="datepicker" name="dataDeNascimento">
                             <form:errors path="dataDeNascimento" />
                         </div>
@@ -230,10 +214,5 @@
 	SISPOS - Sistema de Pós-Graduação da UEZO | Open Source System
     </footer>
   </div>
-<<<<<<< HEAD
-  </body>
-</html>
-=======
 </body>
 </html>
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
