@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<!--<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
     
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
 <html !DOCTYPE>
 <html lang="pt-br">
   <head>
@@ -26,7 +26,7 @@
         
     </section>
     <section>
-    	<div id="div-consulta">
+    	<div id="div-consulta">S
             <h3 class="consultatitulo">Consulta de Alunos</h3>
             <form id="form-consulta" method="post" action="aluno">
                 <input class="campo-consulta" type="text" placeholder="Digite o Nome ou Matrícula"/>

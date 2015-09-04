@@ -1,17 +1,17 @@
-<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %> -->
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 
-<!DOCTYPE html >
+<!DOCTYPE html !>
 <html lang="pt-br">
 	<head>
 		<title>Acesso Restrito - Pós Graduação</title>
 
 		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
-		<!-- <link title="css" href="<c:url value='resources/css/style.css'/>" type="text/css" rel="stylesheet" />-->
+		<link title="css" href="<c:url value='resources/css/style.css'/>" type="text/css" rel="stylesheet" /></link>
 		<link type="image/x-icon" rel="shortcut icon" href="" />
 
 	</head>
@@ -20,7 +20,7 @@
 	<div id="main"> <!-- Principal div que comporta o conteúdo do site -->
 		<header id="menu">
 			<div id="logo">
-				<!-- <img src="<c:url value='resources/imagens/logo_uezo_1.jpg'/>"/> -->
+				<img src="<c:url value='resources/imagens/logo_uezo_1.jpg'/>"/>
 			</div>
 		</header>
 
