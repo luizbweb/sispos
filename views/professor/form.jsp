@@ -1,13 +1,9 @@
-<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<<<<<<< HEAD
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
-=======
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
 
 <html !DOCTYPE>
 <html lang="pt-br">
@@ -15,8 +11,8 @@
     <title>Cadastro de Professores</title>
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
-    <!-- <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" /> -->
+
+    <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
 
@@ -25,8 +21,7 @@
     <header id="menu">
 	
 	<div id="logo">
-		<img src="_imagens/logo_uezo_1.jpg">  
-        <!-- <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>"> -->
+		  <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
     </div>
     </header>
     <section id="submenu">
