@@ -1,7 +1,13 @@
 <!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
+<<<<<<< HEAD
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+=======
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+>>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
 
 <html !DOCTYPE>
 <html lang="pt-br">
@@ -28,19 +34,19 @@
 	</section>
 	<section>
         <div id="cad_form">
-            <form id="cadastro" method="post" action="disciplina">
+            <form:form id="cadastro" action="${spring:mvcUrl('cadastrarDisciplina').build()}" method="post">
                 <fieldset id="borda">
                     <h3 class="formtitulo">Cadastro de Disciplinas</h3>
                     <div class="cadastro_coluna">
                         <label value="Nome">Nome:</label>
-                        <input name="disciplina" class="campo" type="text" />
+                        <input name="nome" class="campo" type="text" />
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Carga_horaria">Carga Hor√°ria:</label>
-                        <input name="carga" class="campo" type="text"/>
+                        <label value="Carga_horaria">Carga Hor·ria:</label>
+                        <input name="cargaHoraria" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Credito">Cr√©dito:</label>
+                        <label value="Credito">CrÈdito:</label>
                         <input name="credito" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -53,11 +59,11 @@
                         </select>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Horario_inicio">Hor√°rio de In√≠cio:</label>
+                        <label value="Horario_inicio">Hor·rio de InÌcio:</label>
                         <input name="horario_inicio" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Horario_termino">Hor√°rio de T√©rmino:</label>
+                        <label value="Horario_termino">Hor·rio de TÈrmino:</label>
                         <input name="horario_termino" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -70,7 +76,7 @@
                         </select>
                     </div>
                     <div class="cadastro_coluna">
-                        <label value="Periodo">Per√≠odo:</label>
+                        <label value="Periodo">PerÌodo:</label>
                         <input name="periodo" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
@@ -78,11 +84,11 @@
                         <input class="botao-consulta" id="btn_cadastrar" type="submit" value="Salvar" />
                     </div>
                 </fieldset>
-            </form>
+            </form:form>
         </div>
     </section>
   <footer>
-	SISPOS - Sistema de P√≥s-Gradua√ß√£o da UEZO | Open Source System
+	SISPOS - Sistema de PÛs-GraduaÁ„o da UEZO | Open Source System
   </footer>
   </div>
   </body>

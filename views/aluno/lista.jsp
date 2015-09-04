@@ -2,14 +2,15 @@
     pageEncoding="utf-8"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html !DOCTYPE>
+
+<!DOCTYPE html!>
 <html lang="pt-br">
   <head>
     <title>Resultado da Consulta de Alunos</title>
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value="/resources/css/style.css"/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
   <body>
@@ -17,7 +18,7 @@
     <header id="menu">
 	
 	<div id="logo">
-		<img src="_imagens/logo_uezo_1.jpg"/>
+		<img src="<c:url value="/resources/imagens/logo_uezo_1.jpg"/>">
 	</div>
     </header>
         <section id="submenu">
@@ -37,8 +38,9 @@
                     </b> 
 			</ul>
 			<ul class="list">
+				<c:forEach items="${alunos}" var="aluno">
                 <li>
-					<div class="titulos">Aluno Fulano</div>
+					<div class="titulos">${aluno.nome}</div>
 					<div class="titulos">XXXXXXXXXX</div>
 					<div class="titulos">(021)1234-5678</div>
 					<div class="titulos">aluno@provedor.com.br</div>
@@ -48,6 +50,7 @@
 						<input class="carteirinha" type="button" value="" />
 						<input class="declara" type="button" value="" />
 					</div>
+				</c:forEach>
             </ul>
 		</div>
     </section>
