@@ -1,20 +1,6 @@
-<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<<<<<<< HEAD
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
-
-<html !DOCTYPE>
-<html lang="pt-br">
-	<head>
-		<title>Cadastro de Curso</title>
-		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-		<link title="css" href="style.css" type="text/css" rel="stylesheet" />
-<!-- <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" /> -->
-		<link type="image/x-icon" rel="shortcut icon" href="" />
-	</head>
-    
-=======
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
@@ -28,20 +14,12 @@
 	<link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
 	<link type="image/x-icon" rel="shortcut icon" href="" />
 </head>
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
 	<body>
 	<div id="main"> <!-- Principal div que comporta o conteúdo do site -->
 		<header id="menu">
-<<<<<<< HEAD
-	   <div id="logo">
-           <img src="_imagens/logo_uezo_1.jpg">
-		  <!-- <img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>"> -->
-	   </div>
-=======
 			<div id="logo">
 				<img src="<c:url value='../resources/imagens/logo_uezo_1.jpg'/>">
 			</div>
->>>>>>> 3beb355c84cab1d67540e550ba8da7d06bc347b3
 		</header>
 		<section id="submenu">
 			<!--Lista Referente ao Submenu-->
