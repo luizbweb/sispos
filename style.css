@@ -465,3 +465,19 @@ h3.consultatitulo{
 		width: 94%;
 	}
 }
+
+/* Barra superior (logout) */
+
+.bt_logout {
+    background-image: url(icones/glyphicons-58-history.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+.bt_logout:hover {
+    background-image: url(icones/glyphicons-58-history-hover.png);
+}
