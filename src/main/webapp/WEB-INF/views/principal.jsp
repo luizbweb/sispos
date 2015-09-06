@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html !>
 <html lang="pt-br">
 	<head>
 		<title>Acesso Restrito - Pós Graduação</title>
@@ -31,9 +31,9 @@
 					<h3 class="menutitulo">Alunos</h3>
 					<ul class="menulist">
 						<li> <a class="menulink" href="aluno/form"> Novo Aluno </a></li>
-						<li> <a class="menulink" href="consulta_aluno.html"> Buscar Alunos </a></li>
+						<li> <a class="menulink" href="aluno/consulta"> Buscar Alunos </a></li>
 						<li> <a class="menulink" href="form_aluno.html"> Atualizar Cadastro </a></li>
-						<li> <a class="menulink" href="lista_alunos.html"> Relatório de Alunos </a></li>
+						<li> <a class="menulink" href="aluno"> Relatório de Alunos </a></li>
 					</ul>
 				</div>
 				

@@ -13,7 +13,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping
-	public String logar(){
+	public String principal(){
 		return "principal";
 	}
 }

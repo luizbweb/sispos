@@ -5,34 +5,34 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 @Entity
 public class Endereco {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	
-	private String pais; 
-	private String estado; 
-	private String cidade; 
-	private String bairro; 
+	@NotBlank
+	private String pais;
+	@NotBlank
+	private String estado;
+	@NotBlank
+	private String cidade;
+	@NotBlank
+	private String bairro;
+	@NotBlank
 	private String logradouro;
+	@NotBlank
 	private String complemento;
+	
 	private int numero;
 
-	public Endereco(String pais, String estado, String cidade,
-			String bairro, String logradouro, String complemento, int numero) {
-		this.pais = pais;
-		this.estado = estado;
-		this.cidade = cidade;
-		this.bairro = bairro;
-		this.logradouro = logradouro;
-		this.complemento = complemento;
+	public void setNumero(Integer numero) {
 		this.numero = numero;
 	}
-	
-	public Endereco() {}
-	
+
 	public String getPais() {
 		return pais;
 	}

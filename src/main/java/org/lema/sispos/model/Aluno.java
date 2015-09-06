@@ -1,5 +1,8 @@
 package org.lema.sispos.model;
 
+import java.util.Calendar;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,43 +10,60 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+import javax.validation.Valid;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-public class Aluno{
+public class Aluno {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private double cr;
+	
 	private String status;
 	private String lattes;
 
 	@JoinColumn(unique=true)
 	@OneToOne
 	private Matricula matricula;
-	
+	@NotBlank
 	private String nome;
-	private String sobrenome; 
+	@NotBlank
+	private String sobrenome;
+	@NotBlank
 	private String cpf;
+	@NotBlank
 	private String rg;
+	@NotBlank
 	private String orgao;
+	@NotBlank
 	private String expedicao;
+	
 	@DateTimeFormat(pattern="dd/MM/yyyy")
-	private String dataDeNascimento;
+	private Calendar dataDeNascimento;
+	@NotBlank
 	private String raca;
-	private String nacionalidade; 
+	@NotBlank
+	private String nacionalidade;
+	@NotBlank
 	private String telefone;
+	@NotBlank
 	private String celular;
+	@NotBlank
+	@Email
 	private String email;
+	@NotBlank
 	private String login;
+	@NotBlank
 	private String senha;
 	
-	@ManyToOne
+	@Valid
+	@ManyToOne(cascade=CascadeType.PERSIST)
 	private Endereco endereco;
-
-	
 	
 	public String getNome() {
 		return nome;
@@ -94,11 +114,11 @@ public class Aluno{
 		this.rg = rg;
 	}
 
-	public String getDataDeNascimento() {
+	public Calendar getDataDeNascimento() {
 		return dataDeNascimento;
 	}
 
-	public void setDataDeNascimento(String dataDeNascimento) {
+	public void setDataDeNascimento(Calendar dataDeNascimento) {
 		this.dataDeNascimento = dataDeNascimento;
 	}
 
@@ -166,14 +186,10 @@ public class Aluno{
 		this.endereco = endereco;
 	}
 
-	
-
 	public void setMatricula(Matricula matricula) {
 		this.matricula = matricula;
 	}
 
-	
-	
 	public double getCr() {
 		return cr;
 	}

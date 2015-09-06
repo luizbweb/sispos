@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
 <html !DOCTYPE>
 <html lang="pt-br">
@@ -27,16 +29,16 @@
 	</section>
 	<section>
         <div id="cad_form">
-            <form id="cadastro" method="post" action="disciplina">
+            <form:form id="cadastro" action="${spring:mvcUrl('cadastrarDisciplina').build()}" method="post">
                 <fieldset id="borda">
                     <h3 class="formtitulo">Cadastro de Disciplinas</h3>
                     <div class="cadastro_coluna">
                         <label value="Nome">Nome:</label>
-                        <input name="disciplina" class="campo" type="text" />
+                        <input name="nome" class="campo" type="text" />
                     </div>
                     <div class="cadastro_coluna">
                         <label value="Carga_horaria">Carga Horária:</label>
-                        <input name="carga" class="campo" type="text"/>
+                        <input name="cargaHoraria" class="campo" type="text"/>
                     </div>
                     <div class="cadastro_coluna">
                         <label value="Credito">Crédito:</label>
@@ -77,7 +79,7 @@
                         <input class="botao-consulta" id="btn_cadastrar" type="submit" value="Salvar" />
                     </div>
                 </fieldset>
-            </form>
+            </form:form>
         </div>
     </section>
   <footer>

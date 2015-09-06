@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
 <html !DOCTYPE>
 <html lang="pt-br">
@@ -27,7 +29,7 @@
 	</section>
 	<section>
         <div id="cad_form">
-		<form id="cadastro" method="post" action="professor">
+		<form:form id="cadastro" method="post" action="${spring:mvcUrl('cadastrarProfessor').build()}" >
             <fieldset id="borda">
                 <h3 class="formtitulo">Cadastro de Professores</h3>
                 <!-- RETIRADA DA MATRICULA 
@@ -181,7 +183,7 @@
                     <input class="botao-consulta" id="btn_cadastrar" type="submit" value="Salvar" />
                 </div>
             </fieldset>
-		</form>
+		</form:form>
     </div>
     </section>
   <footer>
