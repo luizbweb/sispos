@@ -9,7 +9,7 @@
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+   <link title="css" href="<c:url value="/resources/css/style.css"/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
   <body>
@@ -25,14 +25,18 @@
     	<section id="resultados">
 		<div id="lista_alunos">
 			<ul class="list list_titulos">
+			
 				<li>
-                    <b>
-                        <div class="titulos">Disciplina</div> 
-                        <div class="titulos">Curso</div> 
+                   <c:forEach items="${disciplinas}" var="disciplina">
+                        <div class="titulos">${disciplina.nome}</div> 
+                        <div class="titulos">${disciplina.curso}</div> 
+                        
+                        <!-- NAO POSSUI ESSES ATRIBUTOS NA CLASSE DISCIPLINA
                         <div class="titulos">Créditos</div> 
                         <div class="titulos">Professor</div>
-                        <div class="titulos">Ação</div>
-                    </b> 
+                        <div class="titulos">Ação</div> -->
+                 </c:forEach>    
+            
 			</ul>
 			<ul class="list">
                 <li>
@@ -43,6 +47,7 @@
 					<div class="titulos">
 						<input class="editar" type="button" value="" />
 					</div>
+					
             </ul>
 		</div>
     </section>

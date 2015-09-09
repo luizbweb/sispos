@@ -43,7 +43,7 @@
 						<li> <a class="menulink" href="disciplina/form"> Nova Disciplina </a></li>
 						<li> <a class="menulink" href="consulta_disciplina.html"> Buscar Disciplina </a></li>
 						<li> <a class="menulink" href="form_disciplina.html"> Atualizar Disciplina </a></li>
-						<li> <a class="menulink" href="lista_disciplinas.html"> Relatório de Disciplinas </a></li>
+						<li> <a class="menulink" href="disciplina"> Relatório de Disciplinas </a></li>
 					</ul>
 				</div>
 
