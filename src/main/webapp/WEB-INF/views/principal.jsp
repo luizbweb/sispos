@@ -56,7 +56,7 @@
 						<li> <a class="menulink" href="professor/form"> Novo Professor </a></li>
 						<li> <a class="menulink" href="consulta_prof.html"> Buscar Professores </a></li>
 						<li> <a class="menulink" href="form_prof.html"> Atualizar Professor </a></li>
-						<li> <a class="menulink" href="lista_profs.html"> Relatório de Professores </a></li>
+						<li> <a class="menulink" href="professor"> Relatório de Professores </a></li>
 					</ul>
 				</div>
 
