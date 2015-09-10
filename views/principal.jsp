@@ -20,8 +20,8 @@
 	<div id="main"> <!-- Principal div que comporta o conteúdo do site -->
 		<header id="menu">
 			<div id="logo">
-				<img src="_imagens/logo_uezo_1.jpg"/>
-				<!-- <img src="<c:url value='resources/imagens/logo_uezo_1.jpg'/>"/> -->
+				<!-- <img src="_imagens/logo_uezo_1.jpg"/> -->
+				<img src="<c:url value='resources/imagens/logo_uezo_1.jpg'/>"/>
 			</div>
 		</header>
 
