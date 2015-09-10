@@ -465,3 +465,21 @@ h3.consultatitulo{
 		width: 94%;
 	}
 }
+
+/* Barra superior (logout) */
+
+.bt_logout {
+    background-image: url(icones/glyphicons-389-exit.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    float: right;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+.bt_logout:hover {
+    background-image: url(icones/glyphicons-389-exit-hover.png);
+
+}
