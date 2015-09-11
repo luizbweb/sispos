@@ -43,7 +43,7 @@
 					<div class="titulos">${aluno.nome}</div>
 					<div class="titulos">XXXXXXXXXX</div>
 					<div class="titulos">${aluno.telefone}</div>
-					<div class="titulos">${aluno.email }</div>
+					<div class="titulos">${aluno.email}</div>
 					<div class="titulos final">
                         <input class="editar" type="button" value="" />
 						<input class="historico" type="button" value="" />

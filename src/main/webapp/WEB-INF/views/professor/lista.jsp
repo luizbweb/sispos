@@ -9,7 +9,7 @@
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value="/resources/css/style.css"/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
   <body>
@@ -23,7 +23,7 @@
         <!--Lista Referente ao Submenu-->
       </section>
         	<section id="resultados">
-		<div id="lista_alunos">
+		<div id="lista_professores">
 			<ul class="list list_titulos">
 				<li>
                     <b>
@@ -35,15 +35,17 @@
                     </b> 
 			</ul>
 			<ul class="list">
+			<c:forEach items="${professores}" var="professor">
                 <li>
-					<div class="titulos">Professor Fulano</div>
+					<div class="titulos">${professor.nome}</div>
 					<div class="titulos">XXXXXXXXXX</div>
-					<div class="titulos">(021)1234-5678</div>
-					<div class="titulos">email@uezo.rj.gov.br</div>
+					<div class="titulos">${professor.telefone}</div>
+					<div class="titulos">${professor.email}</div>
 					<div class="titulos">
 						<input class="editar" type="button" value="" />
 
 					</div>
+			</c:forEach>
             </ul>
 		</div>
     </section>

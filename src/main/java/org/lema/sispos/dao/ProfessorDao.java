@@ -1,5 +1,7 @@
 package org.lema.sispos.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -14,5 +16,10 @@ public class ProfessorDao {
 	
 	public void salvar(Professor professor) { 
 		em.persist(professor);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Professor> lista() { 
+		return em.createQuery("from Professor").getResultList();
 	}
 }

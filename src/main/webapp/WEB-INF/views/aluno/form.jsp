@@ -11,8 +11,10 @@
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <link title="css" href="<c:url value='/resources/css/style.css'/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
+    
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
  	<link rel="stylesheet" href="<c:url value='/resources/demos/style.css'/>">
     <script>
   $(function() {

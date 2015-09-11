@@ -53,5 +53,12 @@ public class AlunoController {
 		return "redirect:/";
 	}
 	
+	/*@RequestMapping("/lista")
+	public String lista(Model model){
+		AlunoDao dao = new AlunoDao();
+		model.addAttribute("aluno", dao.lista());
+		return "/lista";
+	}*/
+	
 
 }
