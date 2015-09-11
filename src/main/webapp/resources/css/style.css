@@ -154,7 +154,8 @@ form#login label{
 	text-decoration: none;
 }
 .btn-salvar {
-    background-image: url(icones/glyphicons-444-floppy-disk.png);
+<c:url value='resources/imagens/logo_uezo_1.jpg'/>
+    background-image: url(<c:url value='resources/imagens/glyphicons-444-floppy-disk.png')/>;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -163,7 +164,7 @@ form#login label{
     height: 30px;
 }
 .btn-salvar:hover {
-    background-image: url(icones/glyphicons-444-floppy-disk.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-444-floppy-disk.png)/>;
 }
 /* -------------- */
 /* Outros */
