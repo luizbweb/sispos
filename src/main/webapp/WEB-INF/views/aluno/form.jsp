@@ -34,6 +34,9 @@
 		<!--Lista Referente ao Submenu-->
 	</section>
     <section>
+    <spring:hasBindErrors name="aluno">
+    	<spring:message code="" />
+   	</spring:hasBindErrors>
    			<div id="cad_form">
                 <form:form id="cadastro" commandName="aluno" action="${spring:mvcUrl('cadastrarAluno').build()}" method="post">
                 <!--Dados Pessoais-->

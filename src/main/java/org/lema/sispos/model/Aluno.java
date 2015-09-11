@@ -56,9 +56,9 @@ public class Aluno {
 	@NotBlank
 	@Email
 	private String email;
-	@NotBlank
+	//@NotBlank
 	private String login;
-	@NotBlank
+	//@NotBlank
 	private String senha;
 	
 	@Valid
