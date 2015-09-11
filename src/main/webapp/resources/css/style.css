@@ -432,7 +432,7 @@ h3.consultatitulo{
     background-image: url(<c:url value='resources/imagens/glyphicons-268-credit-card-hover.png'>);
 }
 .declara {
-    background-image: url(icones/glyphicons-37-file.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-37-file.png'/>);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -441,7 +441,7 @@ h3.consultatitulo{
     height: 30px;
 }
 .declara:hover {
-    background-image: url(icones/glyphicons-37-file-hover.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-37-file-hover.png'/>);
 }
 
 /* ---------------------------------------------------------------------- */
