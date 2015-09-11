@@ -31,7 +31,7 @@ public class ProfessorController {
 	}
 	
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value="lista",method=RequestMethod.GET)
 	public ModelAndView list(){
 		List<Professor> professores = professorDao.lista();
 		

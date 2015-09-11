@@ -31,8 +31,7 @@ public class DisciplinaController {
 		return "redirect:/";
 	}
 	
-	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value="/lista", method=RequestMethod.GET)
 	public ModelAndView list(){
 		List<Disciplina> disciplinas = disciplinaDao.lista();
 		
