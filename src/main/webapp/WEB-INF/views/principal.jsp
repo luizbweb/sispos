@@ -44,15 +44,9 @@
 					<h3 class="menutitulo">Disciplinas</h3>
 					<ul class="menulist">
 						<li> <a class="menulink" href="disciplina/form"> Nova Disciplina </a></li>
-<<<<<<< HEAD
 						<li> <a class="menulink" href="disciplina/consulta"> Buscar Disciplina </a></li>
 						<li> <a class="menulink" href="disciplina/consulta"> Atualizar Disciplina </a></li>
 						<li> <a class="menulink" href="disciplina/lista"> Relatório de Disciplinas </a></li>
-=======
-						<li> <a class="menulink" href="consulta_disciplina.html"> Buscar Disciplina </a></li>
-						<li> <a class="menulink" href="form_disciplina.html"> Atualizar Disciplina </a></li>
-						<li> <a class="menulink" href="disciplina"> Relatório de Disciplinas </a></li>
->>>>>>> 4a082f5a777f6ac4f8d7dcbb840babc35910c292
 					</ul>
 				</div>
 
@@ -62,15 +56,10 @@
 					<h3 class="menutitulo">Professores</h3>
 					<ul class="menulist">
 						<li> <a class="menulink" href="professor/form"> Novo Professor </a></li>
-<<<<<<< HEAD
 						<li> <a class="menulink" href="professor/consulta"> Buscar Professores </a></li>
 						<li> <a class="menulink" href="professor/consulta"> Atualizar Professor </a></li>
 						<li> <a class="menulink" href="professor/lista"> Relatório de Professores </a></li>
-=======
-						<li> <a class="menulink" href="consulta_prof.html"> Buscar Professores </a></li>
-						<li> <a class="menulink" href="form_prof.html"> Atualizar Professor </a></li>
-						<li> <a class="menulink" href="professor"> Relatório de Professores </a></li>
->>>>>>> 4a082f5a777f6ac4f8d7dcbb840babc35910c292
+
 					</ul>
 				</div>
 

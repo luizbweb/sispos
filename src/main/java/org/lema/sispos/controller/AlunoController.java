@@ -27,7 +27,7 @@ public class AlunoController {
 		return "aluno/form";
 	}
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value="lista",method=RequestMethod.GET)
 	public ModelAndView list() { 
 		List<Aluno> alunos = alunoDao.lista();
 		
@@ -53,12 +53,6 @@ public class AlunoController {
 		return "redirect:/";
 	}
 	
-	/*@RequestMapping("/lista")
-	public String lista(Model model){
-		AlunoDao dao = new AlunoDao();
-		model.addAttribute("aluno", dao.lista());
-		return "/lista";
-	}*/
 	
 
 }
