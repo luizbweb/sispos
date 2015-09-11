@@ -469,7 +469,7 @@ h3.consultatitulo{
 /* Barra superior (logout) */
 
 .bt_logout {
-    background-image: url(icones/glyphicons-389-exit.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-389-exit.png'>);
     background-repeat: no-repeat;
     background-position: 95%;
     float: right;
@@ -480,6 +480,6 @@ h3.consultatitulo{
     padding: 5px;
 }
 .bt_logout:hover {
-    background-image: url(icones/glyphicons-389-exit-hover.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-389-exit-hover.png'/>);
 
 }
