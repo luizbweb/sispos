@@ -9,7 +9,7 @@
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value="/resources/css/style.css"/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
     <body>
@@ -36,14 +36,16 @@
                     </b> 
 			</ul>
 			<ul class="list">
+			<c:forEach items="${cursos}" var="curso">
                  <li>
-					<div class="titulos">Curso</div>
-					<div class="titulos">Coordenador</div>
-					<div class="titulos">Duração</div>
-					<div class="titulos">Tipo</div>
+					<div class="titulos">${curso.nome}</div>
+					<div class="titulos">${curso.coordenacao}</div>
+					<div class="titulos">${curso.duracao}</div>
+					<!--  <div class="titulos">Tipo</div> -->
 					<div class="titulos">
 						<input class="editar" type="button" value="" />
 					</div>
+			</c:forEach>
                 </ul>
 		</div>
 	</section>
