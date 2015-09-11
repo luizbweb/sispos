@@ -417,7 +417,7 @@ h3.consultatitulo{
     height: 30px;
 }
 .historico:hover {
-    background-image: url(icones/glyphicons-58-history-hover.png);
+    background-image: url(<c:url value='resources/imagens/glyphicons-58-history-hover.png'/>);
 }
 .carteirinha {
     background-image: url(icones/glyphicons-268-credit-card.png);
