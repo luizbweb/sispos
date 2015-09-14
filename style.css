@@ -178,7 +178,7 @@ form#login label{
 
 .btn-limpar:hover {
 	background-image: url(icones/glyphicons-444-floppy-disk.png);
-
+}
 /* -------------- */
 /* Outros */
 a#destaque{
@@ -511,6 +511,6 @@ h3.consultatitulo{
     float: right;
     border: solid 2px #9CF;
     border-left: solid 5px #6FC2F4;
-
+	
 }
 
