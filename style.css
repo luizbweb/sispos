@@ -165,6 +165,20 @@ form#login label{
 .btn-salvar:hover {
     background-image: url(icones/glyphicons-444-floppy-disk.png);
 }
+
+.btn-limpar {
+	background-image: url(icones/glyphicons-444-floppy-disk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 30px;
+    height: 30px;
+}
+
+.btn-limpar:hover {
+	background-image: url(icones/glyphicons-444-floppy-disk.png);
+
 /* -------------- */
 /* Outros */
 a#destaque{
