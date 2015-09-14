@@ -483,3 +483,20 @@ h3.consultatitulo{
     background-image: url(icones/glyphicons-389-exit-hover.png);
 
 }
+
+/* CSS responsável pelos menus "dropdown" */
+/* No caso, está com o mesmo estilo mas resolvi criar
+   para caso a gente decida fazer algo mais estiloso*/
+
+.menu_dropdown {
+
+    width: 160px;
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #F0F0F0;
+    float: right;
+    border: solid 2px #9CF;
+    border-left: solid 5px #6FC2F4;
+
+}
+
