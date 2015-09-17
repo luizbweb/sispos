@@ -1,16 +1,5 @@
-*.class
-.DS_Store
-target
-.settings
-.project
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-.classpath
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+*.xml
+*.location
+*.jnl
+*.apm
+_imagens/LoginRegistrationForm
