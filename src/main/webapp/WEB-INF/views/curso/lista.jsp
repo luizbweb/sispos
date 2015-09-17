@@ -42,8 +42,9 @@
 					<div class="titulos">${curso.coordenacao}</div>
 					<div class="titulos">${curso.duracao}</div>
 					<!--  <div class="titulos">Tipo</div> -->
+				 <!--  <a href=""> Editar </a> --> 
 					<div class="titulos">
-						<input class="editar" type="button" value="" />
+						<a href= "editar"> <input class="edicao" type="button" value="editar" /></a>
 					</div>
 			</c:forEach>
                 </ul>
