@@ -9,9 +9,18 @@
     <title>Cadastro de Professores</title>
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-    <link title="css" href="style.css" type="text/css" rel="stylesheet" />
+    <!-- <link title="css" href="style.css" type="text/css" rel="stylesheet" /> -->
     <!-- <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" /> -->
     <link type="image/x-icon" rel="shortcut icon" href="" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script>
+	$(function() {
+	$( "#datepicker" ).datepicker();
+	});
+	</script>
   </head>
 
   <body>
@@ -87,7 +96,7 @@
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Nascimento">Nasc:</label>
-                    <input nome="nascimento" class="campo" type="text"/>
+                    <input id="datepicker" nome="nascimento" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Naturalidade">Naturalidade:</label>
