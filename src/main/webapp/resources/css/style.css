@@ -154,7 +154,7 @@ form#login label{
 	text-decoration: none;
 }
 .btn-salvar {
-    background-image: url(<c:url value='resources/imagens/glyphicons-444-floppy-disk.png'/>);
+    background-image: url(icones/glyphicons-444-floppy-disk.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -163,7 +163,21 @@ form#login label{
     height: 30px;
 }
 .btn-salvar:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-444-floppy-disk.png'/>);
+    background-image: url(icones/glyphicons-444-floppy-disk.png);
+}
+
+.btn-limpar {
+	background-image: url(icones/glyphicons-444-floppy-disk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 30px;
+    height: 30px;
+}
+
+.btn-limpar:hover {
+	background-image: url(icones/glyphicons-444-floppy-disk.png);
 }
 /* -------------- */
 /* Outros */
@@ -395,7 +409,7 @@ h3.consultatitulo{
     align-items: flex-end;
 }
 .editar {
-    background-image: url(<c:url value='resources/imagens/glyphicons-31-pencil.png'/>);
+    background-image: url(icones/glyphicons-31-pencil.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -404,11 +418,11 @@ h3.consultatitulo{
     height: 30px;
 }
 .editar:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-31-pencil-hover.png'/>);
+    background-image: url(icones/glyphicons-31-pencil-hover.png);
 }
 
 .historico {
-    background-image: url(<c:url value='resources/imagens/glyphicons-58-history.png'/>);
+    background-image: url(icones/glyphicons-58-history.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -417,10 +431,10 @@ h3.consultatitulo{
     height: 30px;
 }
 .historico:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-58-history-hover.png'/>);
+    background-image: url(icones/glyphicons-58-history-hover.png);
 }
 .carteirinha {
-    background-image: url(<c:url value='resources/imagens/glyphicons-268-credit-card.png'/>);
+    background-image: url(icones/glyphicons-268-credit-card.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -429,10 +443,10 @@ h3.consultatitulo{
     height: 30px;
 }
 .carteirinha:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-268-credit-card-hover.png'>);
+    background-image: url(icones/glyphicons-268-credit-card-hover.png);
 }
 .declara {
-    background-image: url(<c:url value='resources/imagens/glyphicons-37-file.png'/>);
+    background-image: url(icones/glyphicons-37-file.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -441,7 +455,7 @@ h3.consultatitulo{
     height: 30px;
 }
 .declara:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-37-file-hover.png'/>);
+    background-image: url(icones/glyphicons-37-file-hover.png);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -469,7 +483,7 @@ h3.consultatitulo{
 /* Barra superior (logout) */
 
 .bt_logout {
-    background-image: url(<c:url value='resources/imagens/glyphicons-389-exit.png'>);
+    background-image: url(icones/glyphicons-389-exit.png);
     background-repeat: no-repeat;
     background-position: 95%;
     float: right;
@@ -480,6 +494,23 @@ h3.consultatitulo{
     padding: 5px;
 }
 .bt_logout:hover {
-    background-image: url(<c:url value='resources/imagens/glyphicons-389-exit-hover.png'/>);
+    background-image: url(icones/glyphicons-389-exit-hover.png);
 
 }
+
+/* CSS responsável pelos menus "dropdown" */
+/* No caso, está com o mesmo estilo mas resolvi criar
+   para caso a gente decida fazer algo mais estiloso*/
+
+.menu_dropdown {
+
+    width: 160px;
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #F0F0F0;
+    float: right;
+    border: solid 2px #9CF;
+    border-left: solid 5px #6FC2F4;
+	
+}
+
