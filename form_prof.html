@@ -37,6 +37,7 @@
 		$j(document).ready(function(){
 
 		$j("#cep").mask("99999-999"); // onde #cep é o id do campo
+		$j("#cpf").mask("999.999.999-99"); // onde #cpf é o id do campo
 
 		});
 	</script>
@@ -427,7 +428,7 @@
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Cpf">CPF:</label>
-                    <input name="cpf" class="campo" type="text"/>
+                    <input name="cpf" id="cpf" class="campo" type="text"/>
                 </div>
                 <div class="cadastro_coluna">
                     <label value="Titulacao">Titulação:</label>
