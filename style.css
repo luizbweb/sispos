@@ -272,11 +272,7 @@ ul.menulist li {
     width:400px;
 }
 
-<<<<<<< HEAD
 #cadastro input.campo, .campo, #cadastro select.campo{
-=======
-form#cadastro input.campo, form#cadastro select.campo{
->>>>>>> af1bdaf194c4b07ee2db3aab629975caf8a00d9c
 	color: #0066a3;
 	border: solid 2px #9CF;
 	border-left: solid 5px #6FC2F4;
