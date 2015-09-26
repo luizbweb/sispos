@@ -10,7 +10,7 @@
 
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
     <!-- <link title="css" href="style.css" type="text/css" rel="stylesheet" /> -->
-    <link title="css" href="<c:url value='../resources/css/style.css'/>" type="text/css" rel="stylesheet" />
+    <link title="css" href="<c:url value="/resources/css/style.css"/>" type="text/css" rel="stylesheet" />
     <link type="image/x-icon" rel="shortcut icon" href="" />
   </head>
 
