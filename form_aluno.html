@@ -33,6 +33,7 @@
 		$j(document).ready(function(){
 
 		$j("#cep").mask("99999-999"); // onde #cep é o id do campo
+		$j("#cpf").mask("999.999.999-99"); // onde #cpf é o id do campo
 
 		});
 	</script>
@@ -96,7 +97,7 @@
                         </div>
                         <div class="cadastro_coluna">
                             <label>CPF:</label>
-                            <input class="campo" type="text" name="cpf"  maxlength="11">
+                            <input class="campo" id="cpf" type="text" name="cpf"  maxlength="11">
                             <form:errors path="cpf" />
                         </div>
                         <div class="cadastro_coluna">
