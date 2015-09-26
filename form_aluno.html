@@ -5,6 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %> -->
 <!DOCTYPE html>
+<html lang="pt-br">
 <html>
 <head>
     <title>Cadastro de Aluno</title>
@@ -25,7 +26,9 @@
 <body>
 <div id="main"> <!-- Principal div que comporta o conteúdo do site -->
     <header id="menu">
+
 	   <div id="logo">
+
 		  <img src="_imagens/logo_uezo_1.jpg">
 	   </div>
     </header>
@@ -46,8 +49,8 @@
                        
                         </div> -->
                         <div class="cadastro_coluna">
-                            <label>Nome:</label>
-                            <input class="campo" name="nome" value="${aluno.nome}" maxlength="15"/>
+                            <label value="nome">Nome:</label>
+                            <input class="campo" name="nome"  maxlength="15"/>
                             <form:errors path="nome" />
                         </div>
                         <div class="cadastro_coluna">
@@ -88,7 +91,7 @@
                             <form:errors path="raca" />
                         </div>
                         
-                            <div class="cadastro_coluna">
+                    <div class="cadastro_coluna">
                     <label value="Nacionalidade">Nacionalidade:</label>
 					<select name="nacionalidade" align="right" class="menu_dropdown">
 							<option value="AF">Afeganistão</option>
@@ -369,12 +372,12 @@
                        
                         <div class="cadastro_coluna">
                             <label>País: </label>
-                            <input class="campo" type="text" value="${aluno.endereco.pais}" name="endereco.pais"  maxlength="50">
+                            <input class="menu_dropdown" type="text" value="${aluno.endereco.pais}" name="endereco.pais"  maxlength="50">
                             <form:errors path="endereco.pais" />
                         </div>
                         <div class="cadastro_coluna">
                             <label>Estado:</label>
-                            <select class="campo" name="endereco.estado">
+                            <select name="endereco.estado" class="menu_dropdown">
                             	<option value="">Selecione</option>  
                                 <option value="ac">Acre</option> 
                                 <option value="al">Alagoas</option> 
@@ -438,8 +441,8 @@
                         </div>
                         <div class="cadastro_coluna"> 
                             <label>Inicio: </label>
-							<select class="campo" name="inicio_mat">
-							<option></option>
+							<select class="menu_dropdown" name="inicio_mat">
+							<option>Ano...</option>
 							<option>2009</option>
 							<option>2010</option>
 							<option>2011</option>
@@ -448,8 +451,8 @@
 							<option>2014</option>
 							<option>2015</option>
 							</select>
-							<select>
-							<option></option>
+							<select class="menu_dropdown">
+							<option>Semestre...</option>
 							<option>1º semestre</option>
 							<option>2º semestre</option>
 							</select>
@@ -460,8 +463,8 @@
                         </div>
                         <div class="cadastro_coluna">
                             <label>Término: </label>
-							<select class="campo" name="termino_mat">
-							<option></option>
+							<select class="menu_dropdown" name="termino_mat">
+							<option>Ano...</option>
 							<option>2016</option>
 							<option>2017</option>
 							<option>2018</option>
@@ -470,8 +473,8 @@
 							<option>2021</option>
 							<option>2022</option>
 							</select>
-							<select>
-							<option></option>
+							<select class="menu_dropdown">
+							<option>Semestre...</option>
 							<option>1º semestre</option>
 							<option>2º semestre</option>
 							</select>
