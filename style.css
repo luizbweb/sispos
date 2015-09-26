@@ -69,7 +69,7 @@ div#main {
 }
 /* -------------- */
 /* Caixa de Formulário */
-form#login {
+#login {
 	background-color:#0066a6;
 
 	top: 100px;
@@ -98,7 +98,7 @@ div#titlogin{
 	width: 250px;
 	height: 30px;
 }
-form#login input.campo{
+form#login input.campo, .campo{
 	color: #014c88;
 	border: solid 2px #ccc;
 	border-left: solid 5px #ccc;
@@ -272,7 +272,7 @@ form#cadastro {
     width:400px;
 }
 
-form#cadastro input.campo, form#cadastro select.campo{
+form#cadastro input.campo, .campo, form#cadastro select.campo{
 	color: #0066a3;
 	border: solid 2px #9CF;
 	border-left: solid 5px #6FC2F4;
@@ -289,6 +289,7 @@ form#cadastro label{
 	margin: 0 auto;
 	height:30px;
 	width:400px;
+
 }
 
 div#cad_form {
@@ -309,7 +310,7 @@ fieldset#borda{
 }
 .itens_cadastro{
         height: 30px;
-        margin-top: 20px 
+        margin-top: 20px; 
         margin-left: 20px;
 }
 h3.formtitulo{
