@@ -504,7 +504,6 @@ h3.consultatitulo{
    para caso a gente decida fazer algo mais estiloso*/
 
 .menu_dropdown {
-
     width: 160px;
     border-radius: 0px;
     overflow: hidden;
@@ -514,4 +513,9 @@ h3.consultatitulo{
     border-left: solid 5px #6FC2F4;
 	
 }
+#periodo {
+    width: 80px;
+}
+
+
 
