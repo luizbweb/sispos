@@ -268,11 +268,11 @@ ul.menulist li {
 
 /*-----------------------------------------------*/
 /*Formulário geral*/
-form#cadastro {
+#cadastro {
     width:400px;
 }
 
-form#cadastro input.campo, .campo, form#cadastro select.campo{
+#cadastro input.campo, .campo, #cadastro select.campo{
 	color: #0066a3;
 	border: solid 2px #9CF;
 	border-left: solid 5px #6FC2F4;
@@ -336,7 +336,7 @@ h3.formtitulo{
 	margin: 0 auto;
 }
 
-form#cadastro ul {
+#cadastro ul {
 	list-style-type: none;
 	margin: 2px;
 }
