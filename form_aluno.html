@@ -50,7 +50,7 @@
                         </div> -->
                         <div class="cadastro_coluna">
                             <label value="nome">Nome:</label>
-                            <input class="campo" name="nome"  maxlength="15"/>
+                            <input class="campo" name="nome" value="${aluno.nome}" maxlength="15">
                             <form:errors path="nome" />
                         </div>
                         <div class="cadastro_coluna">
@@ -368,8 +368,7 @@
                             <input class="campo" type="text" name="email"  maxlength="30">
                             <form:errors path="email" />
                         </div>
-                        Endereço pessoal
-                       
+
                         <div class="cadastro_coluna">
                             <label>País: </label>
                             <input class="menu_dropdown" type="text" value="${aluno.endereco.pais}" name="endereco.pais"  maxlength="50">
@@ -430,7 +429,6 @@
                             <label>Complemento:</label>
                             <input class="campo" type="text" name="endereco.complemento"  maxlength="4">
                         </div>
-                         VERIFICAR USO DO CP
                         <div class="cadastro_coluna">
                             <label>CEP: </label>
                             <input class="campo" type="text" name="cep"  maxlength="8">
